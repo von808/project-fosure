@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./images/favicon.svg" type="image/x-icon" />
+  <title>Каталог</title>
+  <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./libs/slim-select/slimselect.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+
+  <body>
+    
+    <div class="wrapper">
+      <header class="header" id="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="./" class="logo">
+        <img src="./images/logo.svg" alt="logo" />
+      </a>
+
+      <nav class="nav header__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="catalog.html" class="nav__link _active">Объекты</a></li>
+          <li class="nav__item"><a href="about.html" class="nav__link ">О компании</a></li>
+          <li class="nav__item"><a href="contacts.html" class="nav__link ">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__btns">
+        <button class="nav__link" data-js-modal-open data-path="modal-object">Предложить объект</button>
+        <button class="btn btn--black btn--sm" data-js-modal-open data-path="modal-consultation">Связаться с нами</button>
+      </div>
+
+      <button class="burger-btn">
+        <span class="burger-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="burger-menu">
+  <ul class="burger-menu__list">
+    <li class="nav__item"><a href="catalog.html" class="nav__link">Объекты</a></li>
+    <li class="nav__item"><a href="about.html" class="nav__link">О компании</a></li>
+    <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+  </ul>
+  <div class="burger-menu__btns">
+    <button class="btn btn--white" data-js-modal-open data-path="modal-object">Предложить объект</button>
+    <button class="btn btn--black" data-js-modal-open data-path="modal-consultation">Связаться с нами</button>
+  </div>
+</div>
+
+
+      <main class="main">
+        <section class="catalog">
+          <div class="container">
+            <div class="catalog__inner">
+              <h2 class="catalog__title">Аренда коммерческой недвижимости</h2>
+              <div class="catalog__content">
+                <aside class="filter-wrapper">
+                  <div class="filter accardion">
+                    <form class="filter__form accardion-item">
+                      <div class="filter__header accardion-head">
+                        <h3 class="filter__title">Фильтры</h3>
+                        <svg class="icon icon--angle-down">
+                          <use xlink:href="./images/sprite.svg#angle-down"></use>
+                        </svg>
+                      </div>
+                      <div class="filter__items accardion-body">
+                        <div class="filter__item">
+                          <span class="filter__item-title">Тип помещения:</span>
+                          <select class="select" multiple>
+                            <option value="Офис">Офис</option>
+                            <option value="Торговое помещение">Торговое помещение</option>
+                            <option value="Коворкинг">Коворкинг</option>
+                            <option value="Beauty-пространство">Beauty-пространство</option>
+                            <option value="Склад">Склад</option>
+                            <option value="ПСН (помещение свободного назначения)">ПСН (помещение свободного назначения)</option>
+                          </select>
+                        </div>
+                        <div class="filter__item">
+                          <span class="filter__item-title">Метро или район:</span>
+                          <select class="select" multiple>
+                            <option value="Метро или район 1">Метро или район 1</option>
+                            <option value="Метро или район 2">Метро или район 2</option>
+                            <option value="Метро или район 3">Метро или район 3</option>
+                          </select>
+                        </div>
+                        <div class="filter__item">
+                          <span class="filter__item-title">Площадь:</span>
+                          <div class="input-box input-box--fromto">
+                            <label class="input-box__label">
+                              <input type="number" name="Площадь от" placeholder="от" />
+                              <button class="input-reset" type="button">
+                                <svg class="icon icon--close">
+                                  <use xlink:href="./images/sprite.svg#close"></use>
+                                </svg>
+                              </button>
+                            </label>
+                            <svg class="icon icon--minus">
+                              <use xlink:href="./images/sprite.svg#minus"></use>
+                            </svg>
+                            <label class="input-box__label">
+                              <input type="number" name="Площадь до" placeholder="до" />
+                              <button class="input-reset" type="button">
+                                <svg class="icon icon--close">
+                                  <use xlink:href="./images/sprite.svg#close"></use>
+                                </svg>
+                              </button>
+                            </label>
+                            <span>м²</span>
+                          </div>
+                        </div>
+                        <div class="filter__item">
+                          <span class="filter__item-title">Цена:</span>
+                          <div class="input-box input-box--fromto">
+                            <label class="input-box__label">
+                              <input type="number" name="Цена от" placeholder="от" />
+                              <button class="input-reset" type="button">
+                                <svg class="icon icon--close">
+                                  <use xlink:href="./images/sprite.svg#close"></use>
+                                </svg>
+                              </button>
+                            </label>
+                            <svg class="icon icon--minus">
+                              <use xlink:href="./images/sprite.svg#minus"></use>
+                            </svg>
+                            <label class="input-box__label">
+                              <input type="number" name="Цена до" placeholder="до" />
+                              <button class="input-reset" type="button">
+                                <svg class="icon icon--close">
+                                  <use xlink:href="./images/sprite.svg#close"></use>
+                                </svg>
+                              </button>
+                            </label>
+                            <span>₽</span>
+                          </div>
+                        </div>
+                        <div class="filter__item">
+                          <span class="filter__item-title">Ремонт:</span>
+                          <select class="select" multiple>
+                            <option value="Ремонт 1">Ремонт 1</option>
+                            <option value="Ремонт 2">Ремонт 2</option>
+                            <option value="Ремонт 3">Ремонт 3</option>
+                          </select>
+                        </div>
+                        <div class="filter__item">
+                          <span class="filter__item-title">Этаж:</span>
+                          <div class="input-box input-box--fromto">
+                            <label class="input-box__label">
+                              <input type="number" name="Этаж от" placeholder="от" />
+                              <button class="input-reset" type="button">
+                                <svg class="icon icon--close">
+                                  <use xlink:href="./images/sprite.svg#close"></use>
+                                </svg>
+                              </button>
+                            </label>
+                            <svg class="icon icon--minus">
+                              <use xlink:href="./images/sprite.svg#minus"></use>
+                            </svg>
+                            <label class="input-box__label">
+                              <input type="number" name="Этаж до" placeholder="до" />
+                              <button class="input-reset" type="button">
+                                <svg class="icon icon--close">
+                                  <use xlink:href="./images/sprite.svg#close"></use>
+                                </svg>
+                              </button>
+                            </label>
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="filter__item">
+                          <span class="filter__item-title">Парковка:</span>
+                          <select class="select" multiple>
+                            <option value="Парковка 1">Парковка 1</option>
+                            <option value="Парковка 2">Парковка 2</option>
+                            <option value="Парковка 3">Парковка 3</option>
+                          </select>
+                        </div>
+                        <div class="filter__item">
+                          <span class="filter__item-title">Доступ:</span>
+                          <select class="select" multiple>
+                            <option value="Доступ 1">Доступ 1</option>
+                            <option value="Доступ 2">Доступ 2</option>
+                            <option value="Доступ 3">Доступ 3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <button class="btn btn--sm btn--text filter__reset" type="reset">
+                        <span>Очистить фильтр</span>
+                        <svg class="icon icon--close">
+                          <use xlink:href="./images/sprite.svg#close"></use>
+                        </svg>
+                      </button>
+                    </form>
+                  </div>
+                </aside>
+                <div class="catalog__items-wrapper">
+                  <div class="catalog__items"><article class="cards__item">
+  <div class="cards__item-image-wrapper">
+    
+    <div class="cards__image-swiper swiper">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/1.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/2.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/3.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/4.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/5.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+        
+      </div>
+      <div class="cards__image-swiper-pagination"></div>
+      <ul class="hover-pagination"></ul>
+    </div>
+  </div>
+  <div class="cards__item-info">
+    <div class="cards__item-descr">
+      <a class="cards__item-title" href="card.html">Art Residence</a>
+      <div class="metro-box metro-box--success">
+        <svg class="icon icon--metro">
+          <use xlink:href="./images/sprite.svg#metro"></use>
+        </svg>
+        <span class="metro-name">Беляево</span>
+        <div class="metro-time">
+          <span>7 мин.</span>
+          <svg class="icon icon--car">
+            <use xlink:href="./images/sprite.svg#car"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="cards__item-tags">
+      <span>офис</span>
+      <span>40 м²</span>
+      <span>2 этаж</span>
+    </div>
+    <div class="cards__item-price">
+      <span>75 000 ₽/мес</span>
+    </div>
+  </div>
+</article>
+<article class="cards__item">
+  <div class="cards__item-image-wrapper">
+    
+    <div class="cards__image-swiper swiper">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/2.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/3.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/4.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/5.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/6.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+        
+      </div>
+      <div class="cards__image-swiper-pagination"></div>
+      <ul class="hover-pagination"></ul>
+    </div>
+  </div>
+  <div class="cards__item-info">
+    <div class="cards__item-descr">
+      <a class="cards__item-title" href="card.html">StudioPark</a>
+      <div class="metro-box metro-box--success">
+        <svg class="icon icon--metro">
+          <use xlink:href="./images/sprite.svg#metro"></use>
+        </svg>
+        <span class="metro-name">Беляево</span>
+        <div class="metro-time">
+          <span>7 мин.</span>
+          <svg class="icon icon--car">
+            <use xlink:href="./images/sprite.svg#car"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="cards__item-tags">
+      <span>офис</span>
+      <span>40 м²</span>
+      <span>2 этаж</span>
+    </div>
+    <div class="cards__item-price">
+      <span>75 000 ₽/мес</span>
+    </div>
+  </div>
+</article>
+<article class="cards__item">
+  <div class="cards__item-image-wrapper">
+    
+    <div class="cards__image-swiper swiper">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/3.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/4.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/5.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/6.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/1.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+        
+      </div>
+      <div class="cards__image-swiper-pagination"></div>
+      <ul class="hover-pagination"></ul>
+    </div>
+  </div>
+  <div class="cards__item-info">
+    <div class="cards__item-descr">
+      <a class="cards__item-title" href="card.html">Loft District</a>
+      <div class="metro-box metro-box--success">
+        <svg class="icon icon--metro">
+          <use xlink:href="./images/sprite.svg#metro"></use>
+        </svg>
+        <span class="metro-name">Беляево</span>
+        <div class="metro-time">
+          <span>7 мин.</span>
+          <svg class="icon icon--car">
+            <use xlink:href="./images/sprite.svg#car"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="cards__item-tags">
+      <span>офис</span>
+      <span>40 м²</span>
+      <span>2 этаж</span>
+    </div>
+    <div class="cards__item-price">
+      <span>75 000 ₽/мес</span>
+    </div>
+  </div>
+</article>
+<article class="cards__item">
+  <div class="cards__item-image-wrapper">
+    
+    <div class="cards__image-swiper swiper">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/1.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/2.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/3.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/4.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/5.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+        
+      </div>
+      <div class="cards__image-swiper-pagination"></div>
+      <ul class="hover-pagination"></ul>
+    </div>
+  </div>
+  <div class="cards__item-info">
+    <div class="cards__item-descr">
+      <a class="cards__item-title" href="card.html">Art Residence</a>
+      <div class="metro-box metro-box--success">
+        <svg class="icon icon--metro">
+          <use xlink:href="./images/sprite.svg#metro"></use>
+        </svg>
+        <span class="metro-name">Беляево</span>
+        <div class="metro-time">
+          <span>7 мин.</span>
+          <svg class="icon icon--car">
+            <use xlink:href="./images/sprite.svg#car"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="cards__item-tags">
+      <span>офис</span>
+      <span>40 м²</span>
+      <span>2 этаж</span>
+    </div>
+    <div class="cards__item-price">
+      <span>75 000 ₽/мес</span>
+    </div>
+  </div>
+</article>
+<article class="cards__item">
+  <div class="cards__item-image-wrapper">
+    
+    <div class="cards__image-swiper swiper">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/2.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/3.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/4.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/5.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/6.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+        
+      </div>
+      <div class="cards__image-swiper-pagination"></div>
+      <ul class="hover-pagination"></ul>
+    </div>
+  </div>
+  <div class="cards__item-info">
+    <div class="cards__item-descr">
+      <a class="cards__item-title" href="card.html">StudioPark</a>
+      <div class="metro-box metro-box--success">
+        <svg class="icon icon--metro">
+          <use xlink:href="./images/sprite.svg#metro"></use>
+        </svg>
+        <span class="metro-name">Беляево</span>
+        <div class="metro-time">
+          <span>7 мин.</span>
+          <svg class="icon icon--car">
+            <use xlink:href="./images/sprite.svg#car"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="cards__item-tags">
+      <span>офис</span>
+      <span>40 м²</span>
+      <span>2 этаж</span>
+    </div>
+    <div class="cards__item-price">
+      <span>75 000 ₽/мес</span>
+    </div>
+  </div>
+</article>
+<article class="cards__item">
+  <div class="cards__item-image-wrapper">
+    
+    <div class="cards__image-swiper swiper">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/3.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/4.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/5.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/6.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/1.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+        
+      </div>
+      <div class="cards__image-swiper-pagination"></div>
+      <ul class="hover-pagination"></ul>
+    </div>
+  </div>
+  <div class="cards__item-info">
+    <div class="cards__item-descr">
+      <a class="cards__item-title" href="card.html">Loft District</a>
+      <div class="metro-box metro-box--success">
+        <svg class="icon icon--metro">
+          <use xlink:href="./images/sprite.svg#metro"></use>
+        </svg>
+        <span class="metro-name">Беляево</span>
+        <div class="metro-time">
+          <span>7 мин.</span>
+          <svg class="icon icon--car">
+            <use xlink:href="./images/sprite.svg#car"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="cards__item-tags">
+      <span>офис</span>
+      <span>40 м²</span>
+      <span>2 этаж</span>
+    </div>
+    <div class="cards__item-price">
+      <span>75 000 ₽/мес</span>
+    </div>
+  </div>
+</article>
+<article class="cards__item">
+  <div class="cards__item-image-wrapper">
+    
+    <div class="cards__image-swiper swiper">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/1.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/2.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/3.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/4.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/5.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+        
+      </div>
+      <div class="cards__image-swiper-pagination"></div>
+      <ul class="hover-pagination"></ul>
+    </div>
+  </div>
+  <div class="cards__item-info">
+    <div class="cards__item-descr">
+      <a class="cards__item-title" href="card.html">Art Residence</a>
+      <div class="metro-box metro-box--success">
+        <svg class="icon icon--metro">
+          <use xlink:href="./images/sprite.svg#metro"></use>
+        </svg>
+        <span class="metro-name">Беляево</span>
+        <div class="metro-time">
+          <span>7 мин.</span>
+          <svg class="icon icon--car">
+            <use xlink:href="./images/sprite.svg#car"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="cards__item-tags">
+      <span>офис</span>
+      <span>40 м²</span>
+      <span>2 этаж</span>
+    </div>
+    <div class="cards__item-price">
+      <span>75 000 ₽/мес</span>
+    </div>
+  </div>
+</article>
+<article class="cards__item">
+  <div class="cards__item-image-wrapper">
+    
+    <div class="cards__image-swiper swiper">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/2.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/3.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/4.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/5.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+         <div class="swiper-slide">
+  <div class="cards__item-image">
+    <img data-src="./images/cards/6.jpg" src="./images/1x1.png" width="571" height="392" data-js-lazy alt="card" />
+  </div>
+</div>
+
+        
+      </div>
+      <div class="cards__image-swiper-pagination"></div>
+      <ul class="hover-pagination"></ul>
+    </div>
+  </div>
+  <div class="cards__item-info">
+    <div class="cards__item-descr">
+      <a class="cards__item-title" href="card.html">StudioPark</a>
+      <div class="metro-box metro-box--success">
+        <svg class="icon icon--metro">
+          <use xlink:href="./images/sprite.svg#metro"></use>
+        </svg>
+        <span class="metro-name">Беляево</span>
+        <div class="metro-time">
+          <span>7 мин.</span>
+          <svg class="icon icon--car">
+            <use xlink:href="./images/sprite.svg#car"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="cards__item-tags">
+      <span>офис</span>
+      <span>40 м²</span>
+      <span>2 этаж</span>
+    </div>
+    <div class="cards__item-price">
+      <span>75 000 ₽/мес</span>
+    </div>
+  </div>
+</article>
+</div>
+                  <div class="pagination">
+                    <ul class="pagination__list">
+                      <li class="pagination__item">
+                        <a class="btn pagination__link _active" href="#!">1</a>
+                      </li>
+                      <li class="pagination__item">
+                        <a class="btn pagination__link" href="#!">2</a>
+                      </li>
+                      <li class="pagination__item">
+                        <a class="btn pagination__link" href="#!">3</a>
+                      </li>
+                      <li class="pagination__item">
+                        <a class="btn pagination__link" href="#!">4</a>
+                      </li>
+                      <li class="pagination__item">
+                        <a class="btn pagination__link" href="#!">5</a>
+                      </li>
+                    </ul>
+                    <a class="btn btn--black pagination__btn pagination__next" href="#!">
+                      <span>Следующая</span>
+                      <svg class="icon icon--arrow-right">
+                        <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="form-section">
+          <div class="container">
+            <div class="form-section__inner">
+              <div class="form-section__info">
+                <h2 class="form-section__title">Нужна консультация?</h2>
+                <span class="form-section__subtitle"
+                  >Расскажем об условиях аренды, доступных объектах и процессе сотрудничества</span
+                >
+              </div>
+              <form class="form">
+                <div class="form__inputs">
+                  <div class="input-box">
+                    <input class="_req" type="text" name="Имя" placeholder="Имя" autocomplete="off" />
+                    <span class="input-info">
+                      <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
+                    </span>
+                  </div>
+                  <div class="input-box">
+                    <input class="_req _phone" type="tel" name="Телефон" placeholder="+7 (−−−) −−− −− −−" autocomplete="off" />
+                    <span class="input-info">
+                      <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
+                    </span>
+                  </div>
+                  <div class="input-box">
+                    <button class="btn btn--black" type="submit">Отправить</button>
+                  </div>
+                </div>
+              </form>
+              <div class="form-section__bottom">
+                <span class="form__privacy"
+                  >Отправляя данные, вы соглашаетесь с
+                  <a href="privacy.html">Политикой конфиденциальности и условиями Пользовательского соглашения</a></span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+  <h2 class="visually-hidden">footer</h2>
+  <div class="container">
+    <div class="footer__inner">
+      <a class="logo" href="/">
+        <img src="./images/logo-big.svg" alt="logo-big" />
+      </a>
+      <div class="footer__descr">
+        <a href="privacy.html">Политика конфиденциальности и пользовательское соглашение</a>
+        <span>Все права принадлежат ООО «ФОСУРЕ» © 2025</span>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__link-box">
+          <span>Сайт разработан</span>
+          <a href="applikaciya.com" target="_blank">
+            APPLIKACIYA.COM
+            <svg class="icon icon--open">
+              <use xlink:href="./images/sprite.svg#open"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="footer__link-box">
+          <span>Хостинг</span>
+          <a href="focloud.ru" target="_blank">
+            FOCLOUD.RU
+            <svg class="icon icon--open">
+              <use xlink:href="./images/sprite.svg#open"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="contact-box">
+        <div class="contact-box__item">
+          <div class="icon-box">
+            <svg class="icon icon--phone-fill">
+              <use xlink:href="./images/sprite.svg#phone-fill"></use>
+            </svg>
+          </div>
+          <a class="btn--link" href="tel:+74959677557">+7 495 967-75-57</a>
+        </div>
+        <div class="contact-box__item">
+          <div class="icon-box">
+            <svg class="icon icon--mail-fill">
+              <use xlink:href="./images/sprite.svg#mail-fill"></use>
+            </svg>
+          </div>
+          <a class="btn--link" href="mailto:manager@fosure.ru">manager@fosure.ru</a>
+        </div>
+        <div class="contact-box__item">
+          <div class="icon-box">
+            <svg class="icon icon--telegram">
+              <use xlink:href="./images/sprite.svg#telegram"></use>
+            </svg>
+          </div>
+          <a class="btn--link" href="#!">Telegram</a>
+        </div>
+        <div class="contact-box__item">
+          <div class="icon-box">
+            <svg class="icon icon--whatsapp">
+              <use xlink:href="./images/sprite.svg#whatsapp"></use>
+            </svg>
+          </div>
+          <a class="btn--link" href="#!">WhatsApp</a>
+        </div>
+        <div class="contact-box__item">
+          <div class="icon-box">
+            <svg class="icon icon--map-point">
+              <use xlink:href="./images/sprite.svg#map-point"></use>
+            </svg>
+          </div>
+          <span>г. Москва, ул. Свободы, д. 95, корп. 2</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="visually-hidden">
+  <button id="open-form-success" data-js-modal-open data-path="modal-form-success"></button>
+  <button id="open-form-failed" data-js-modal-open data-path="modal-form-failed"></button>
+  <button id="open-form-cookie" data-js-modal-open data-path="modal-cookie"></button>
+</div>
+
+    </div>
+    <div class="modals">
+  <div class="modal-overlay" data-js-modal-overlay>
+    <div class="modal modal__card-images" data-target="modal-card-images">
+      <div class="modal__content">
+        <button class="btn-close" data-js-modal-close>
+          <svg class="icon icon--close">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__body">
+          <div class="card__images-swiper-wrapper">
+            <button class="btn btn--white btn--icon-sm swiper-button-prev card-swiper-btn-prev">
+              <svg class="icon icon--arrow-left">
+                <use xlink:href="./images/sprite.svg#arrow-left"></use>
+              </svg>
+            </button>
+            <div class="card__images-swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card__images-slide">
+                    <img
+                      data-src="./images/cards/1.jpg"
+                      src="./images/1x1.png"
+                      width="1340"
+                      height="856"
+                      data-js-lazy
+                      alt="card"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__images-slide">
+                    <img
+                      data-src="./images/cards/2.jpg"
+                      src="./images/1x1.png"
+                      width="1340"
+                      height="856"
+                      data-js-lazy
+                      alt="card"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__images-slide">
+                    <img
+                      data-src="./images/cards/3.jpg"
+                      src="./images/1x1.png"
+                      width="1340"
+                      height="856"
+                      data-js-lazy
+                      alt="card"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__images-slide">
+                    <img
+                      data-src="./images/card/4.jpg"
+                      src="./images/1x1.png"
+                      width="1340"
+                      height="856"
+                      data-js-lazy
+                      alt="card"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__images-slide">
+                    <img
+                      data-src="./images/cards/5.jpg"
+                      src="./images/1x1.png"
+                      width="1340"
+                      height="856"
+                      data-js-lazy
+                      alt="card"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__images-slide">
+                    <img
+                      data-src="./images/cards/6.jpg"
+                      src="./images/1x1.png"
+                      width="1340"
+                      height="856"
+                      data-js-lazy
+                      alt="card"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-swiper-pagination"></div>
+            </div>
+            <button class="btn btn--white btn--icon-sm swiper-button-next card-swiper-btn-next">
+              <svg class="icon icon--arrow-right">
+                <use xlink:href="./images/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal__object" data-target="modal-object">
+      <div class="modal__content">
+        <button class="btn-close" data-js-modal-close>
+          <svg class="icon icon--close">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__body">
+          <div class="form-section__info">
+            <h2 class="h3">Предложить коммерческий&nbsp;объект</h2>
+            <span class="subtitle"> Мы ищем недооценённые коммерческие помещения под выкуп, ремонт и сдачу в аренду </span>
+          </div>
+          <form action="#!" class="form">
+            <div class="form__inputs">
+              <div class="input-box">
+                <input class="_req" type="text" name="Адрес" placeholder="Адрес" autocomplete="off" />
+                <span class="input-info">
+                  <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
+                </span>
+              </div>
+              <div class="input-number-box input-box">
+                <input class="input-number _req" type="text" name="Площадь" placeholder="Площадь" autocomplete="off" />
+                <span class="input-info">
+                  <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
+                </span>
+                <div class="input-number__controls">
+                  <button type="button" class="input-number__btn plus">+</button>
+                  <button type="button" class="input-number__btn minus">-</button>
+                </div>
+              </div>
+              <div class="input-box">
+                <input class="_req" type="text" name="Имя" placeholder="Имя" autocomplete="off" />
+                <span class="input-info">
+                  <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
+                </span>
+              </div>
+              <div class="input-box">
+                <input class="_req _phone" type="tel" name="Телефон" placeholder="+7 (−−−) −−− −− −−" autocomplete="off" />
+                <span class="input-info">
+                  <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
+                </span>
+              </div>
+            </div>
+            <button class="btn btn--black" type="submit">Отправить</button>
+          </form>
+          <div class="form-section__bottom">
+            <span class="form__privacy"
+              >Отправляя данные, вы соглашаетесь с
+              <a href="privacy.html">Политикой конфиденциальности и условиями Пользовательского соглашения</a></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal__consultation" data-target="modal-consultation">
+      <div class="modal__content">
+        <button class="btn-close" data-js-modal-close>
+          <svg class="icon icon--close">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__body">
+          <div class="form-section__info">
+            <h2 class="h3">Связаться с нами</h2>
+            <span class="subtitle"> Заполните короткую форму, и мы перезвоним вам в ближайшее рабочее время </span>
+          </div>
+          <form action="#!" class="form">
+            <div class="form__inputs">
+              <div class="input-box">
+                <input class="_req" type="text" name="Имя" placeholder="Имя" autocomplete="off" />
+                <span class="input-info">
+                  <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
+                </span>
+              </div>
+              <div class="input-box">
+                <input class="_req _phone" type="tel" name="Телефон" placeholder="+7 (−−−) −−− −− −−" autocomplete="off" />
+                <span class="input-info">
+                  <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
+                </span>
+              </div>
+            </div>
+            <button class="btn btn--black" type="submit">Отправить</button>
+          </form>
+          <div class="form-section__bottom">
+            <span class="form__privacy">
+              Отправляя данные, вы соглашаетесь с
+              <a href="privacy.html">Политикой конфиденциальности и условиями Пользовательского соглашения</a>
+            </span>
+          </div>
+          <div class="modal__contacts">
+            <div class="modal__contacts-title"><span>Или свяжитесь напрямую</span></div>
+            <div class="modal__contacts-items">
+              <a class="modal__contacts-item" href="tel:+79251302525">
+                <div class="icon-box">
+                  <svg class="icon icon--phone-fill">
+                    <use xlink:href="./images/sprite.svg#phone-fill"></use>
+                  </svg>
+                </div>
+                <span class="btn--link">+7 925 130-25-25</span>
+              </a>
+              <a class="modal__contacts-item" href="mailto:manager@fosure.ru">
+                <div class="icon-box">
+                  <svg class="icon icon--mail-fill">
+                    <use xlink:href="./images/sprite.svg#mail-fill"></use>
+                  </svg>
+                </div>
+                <span class="btn--link">manager@fosure.ru</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal__form-send" data-target="modal-form-success">
+      <div class="modal__content">
+        <button class="btn-close" data-js-modal-close>
+          <svg class="icon icon--close">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__body">
+          <svg class="icon icon--success">
+            <use xlink:href="./images/sprite.svg#success"></use>
+          </svg>
+          <div class="modal__form-info">
+            <h2 class="modal__form-title">Спасибо! <br />Ваша заявка принята</h2>
+            <span class="modal__form-subtitle">Наш менеджер свяжется с вами в течение часа (в&nbsp;рабочее&nbsp;время)</span>
+          </div>
+          <button class="btn btn--black" data-js-modal-close>Закрыть</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal__form-send" data-target="modal-form-failed">
+      <div class="modal__content">
+        <button class="btn-close" data-js-modal-close>
+          <svg class="icon icon--close">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__body">
+          <svg class="icon icon--failed">
+            <use xlink:href="./images/sprite.svg#failed"></use>
+          </svg>
+          <div class="modal__form-info">
+            <h2 class="modal__form-title">Не удалось отправить</h2>
+            <span class="modal__form-subtitle"
+              >К сожалению, заявку не удалось отправить. Попробуйте ещё раз или напишите нам напрямую:</span
+            >
+            <div class="row modal__form-subtitle">
+              <a class="btn--link" href="tel:+79251302525">+7 925 130-25-25</a>
+              <span>или</span>
+              <a class="btn--link" href="mailto:manager@fosure.ru">manager@fosure.ru</a>
+            </div>
+          </div>
+          <button class="btn btn--black" data-js-modal-close>Попробовать снова</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal__cookie" data-target="modal-cookie" id="warning-plate">
+      <div class="modal__content">
+        <div class="modal__body">
+          <img class="cookie-img" src="./images/cookie.png" alt="cookie" />
+          <p>
+            На сайте используются куки сетевых служб Яндекс и Google. Продолжая просмотр сайта, вы выражаете свое согласие
+            <a href="#!">с Политикой хранения и обработки файлов cookie</a>, разработанной в соответствии с требованиями 152-ФЗ "О
+            персональных данных".
+          </p>
+          <button class="btn btn--black" data-js-modal-close id="warning-btn" onclick="checkCookies()">Хорошо</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+<script src="./libs/swiper/swiper-bundle.min.js"></script>
+<script src="./libs/slim-select/slimselect.min.js"></script>
+<script src="./libs/inputmask/inputmask.min.js"></script>
+<script src="./js/main.js"></script>
+<script>
+  function checkCookies() {
+    document.cookie = "COOKIE_ACCEPT=1;path='/';expires:" + new Date(new Date().getTime() + 86400e3 * 365).toUTCString();
+    document.getElementById('warning-plate').remove();
+  }
+</script>
+
+  </body>
+</html>
