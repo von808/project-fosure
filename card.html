@@ -306,7 +306,7 @@
             </div>
           </div>
         </section>
-        <section class="form-section form-section--black">
+        <section class="form-section form-section--black" id="card-form">
           <div class="container">
             <div class="form-section__inner">
               <div class="form-section__info">
@@ -324,13 +324,7 @@
                     </span>
                   </div>
                   <div class="input-box">
-                    <input
-                      class="_phone _req"
-                      type="tel"
-                      name="Телефон"
-                      placeholder="+7 (−−−) −−− −− −−"
-                      autocomplete="off"
-                    />
+                    <input class="_phone _req" type="tel" name="Телефон" placeholder="+7 (−−−) −−− −− −−" autocomplete="off" />
                     <span class="input-info">
                       <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
                     </span>
@@ -355,7 +349,7 @@
               <h2 class="h1">Похожие объекты рядом</h2>
               <div class="cards__swiper swiper">
                 <div class="swiper-wrapper"><div class="swiper-slide">
-  <article class="cards__item">
+  <a class="cards__item" href="card.html">
     <div class="cards__item-image-wrapper">
       
       <div class="cards__image-swiper swiper">
@@ -393,7 +387,7 @@
     </div>
     <div class="cards__item-info">
       <div class="cards__item-descr">
-        <a class="cards__item-title" href="card.html">Art Residence</a>
+        <span class="cards__item-title">Art Residence</span>
         <div class="metro-box metro-box--success">
           <svg class="icon icon--metro">
             <use xlink:href="./images/sprite.svg#metro"></use>
@@ -416,10 +410,10 @@
         <span>75 000 ₽/мес</span>
       </div>
     </div>
-  </article>
+  </a>
 </div>
 <div class="swiper-slide">
-  <article class="cards__item">
+  <a class="cards__item" href="card.html">
     <div class="cards__item-image-wrapper">
       
       <div class="cards__image-swiper swiper">
@@ -457,7 +451,7 @@
     </div>
     <div class="cards__item-info">
       <div class="cards__item-descr">
-        <a class="cards__item-title" href="card.html">StudioPark</a>
+        <span class="cards__item-title">StudioPark</span>
         <div class="metro-box metro-box--success">
           <svg class="icon icon--metro">
             <use xlink:href="./images/sprite.svg#metro"></use>
@@ -480,10 +474,10 @@
         <span>75 000 ₽/мес</span>
       </div>
     </div>
-  </article>
+  </a>
 </div>
 <div class="swiper-slide">
-  <article class="cards__item">
+  <a class="cards__item" href="card.html">
     <div class="cards__item-image-wrapper">
       
       <div class="cards__image-swiper swiper">
@@ -521,7 +515,7 @@
     </div>
     <div class="cards__item-info">
       <div class="cards__item-descr">
-        <a class="cards__item-title" href="card.html">Loft District</a>
+        <span class="cards__item-title">Loft District</span>
         <div class="metro-box metro-box--success">
           <svg class="icon icon--metro">
             <use xlink:href="./images/sprite.svg#metro"></use>
@@ -544,10 +538,10 @@
         <span>75 000 ₽/мес</span>
       </div>
     </div>
-  </article>
+  </a>
 </div>
 <div class="swiper-slide">
-  <article class="cards__item">
+  <a class="cards__item" href="card.html">
     <div class="cards__item-image-wrapper">
       
       <div class="cards__image-swiper swiper">
@@ -585,7 +579,7 @@
     </div>
     <div class="cards__item-info">
       <div class="cards__item-descr">
-        <a class="cards__item-title" href="card.html">Art Residence</a>
+        <span class="cards__item-title">Art Residence</span>
         <div class="metro-box metro-box--success">
           <svg class="icon icon--metro">
             <use xlink:href="./images/sprite.svg#metro"></use>
@@ -608,10 +602,10 @@
         <span>75 000 ₽/мес</span>
       </div>
     </div>
-  </article>
+  </a>
 </div>
 <div class="swiper-slide">
-  <article class="cards__item">
+  <a class="cards__item" href="card.html">
     <div class="cards__item-image-wrapper">
       
       <div class="cards__image-swiper swiper">
@@ -649,7 +643,7 @@
     </div>
     <div class="cards__item-info">
       <div class="cards__item-descr">
-        <a class="cards__item-title" href="card.html">StudioPark</a>
+        <span class="cards__item-title">StudioPark</span>
         <div class="metro-box metro-box--success">
           <svg class="icon icon--metro">
             <use xlink:href="./images/sprite.svg#metro"></use>
@@ -672,7 +666,7 @@
         <span>75 000 ₽/мес</span>
       </div>
     </div>
-  </article>
+  </a>
 </div>
 </div>
                 <div class="cards__bottom">
@@ -699,7 +693,7 @@
             <div class="maintenance__inner">
               <div class="maintenance__info">
                 <div class="maintenance__descr">
-                  <h2 class="maintenance__info-title">Профессиональное <br>обслуживание объектов</h2>
+                  <h2 class="maintenance__info-title">Профессиональное <br />обслуживание объектов</h2>
                   <span class="maintenance__info-subtitle">
                     Наши коммерческие пространства не просто сдаются в аренду — они управляются и поддерживаются ежедневно
                   </span>
@@ -820,6 +814,9 @@
   <button id="open-form-cookie" data-js-modal-open data-path="modal-cookie"></button>
 </div>
 
+      <div class="card-to-form">
+        <a class="btn btn--white" href="#card-form">Назначить просмотр</a>
+      </div>
     </div>
     <div class="modals">
   <div class="modal-overlay" data-js-modal-overlay>
