@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./images/favicon.svg" type="image/x-icon" />
-    <title>О компании</title>
+    <title>Каталог</title>
     <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -21,8 +21,8 @@
 
             <nav class="nav header__nav">
               <ul class="nav__list">
-                <li class="nav__item"><a href="catalog.html" class="nav__link">Объекты</a></li>
-                <li class="nav__item"><a href="about.html" class="nav__link _active">О компании</a></li>
+                <li class="nav__item"><a href="catalog.html" class="nav__link _active">Объекты</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">О компании</a></li>
                 <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
                 <li class="nav__item"><a href="news.html" class="nav__link">Новости и статьи</a></li>
               </ul>
@@ -53,401 +53,232 @@
       </div>
 
       <main class="main">
-        <section class="about">
+        <section class="catalog">
           <div class="container">
-            <div class="about__inner">
-              <div class="about__banner">
-                <div class="about__banner-image">
-                  <img data-src="./images/about/bg.jpg" src="./images/1x1.png" data-js-lazy alt="about-bg" />
-                </div>
-                <div class="about__banner-content">
-                  <div class="about__banner-info">
-                    <h2 class="about__title">О компании</h2>
-                    <span class="about__subtitle">
-                      Мы — команда, которая ищет, покупает, переосмысливает<br />
-                      и сдаёт в аренду недооценённые коммерческие объекты, создавая современные пространства для бизнеса в Москве
-                      и области.
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="banner__items">
-                <div class="banner__item-wrapper">
-                  <div class="banner__item">
-                    <span class="banner__item-numb">11</span>
-                    <span class="banner__item-descr">лет на рынке</span>
-                  </div>
-                </div>
-                <div class="banner__item">
-                  <span class="banner__item-numb">52</span>
-                  <span class="banner__item-descr">помещения под управлением</span>
-                </div>
-                <div class="banner__item">
-                  <span class="banner__item-numb">95%</span>
-                  <span class="banner__item-descr">заполняемость</span>
-                </div>
-                <div class="banner__item">
-                  <span class="banner__item-numb">>40 000 м²</span>
-                  <span class="banner__item-descr">коммерческих пространств</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="why">
-          <div class="container">
-            <div class="why__inner">
-              <div class="why__items">
-                <h2 class="why__title">
-                  Почему<br />
-                  нас выбирают
-                </h2>
-                <div class="why__item">
-                  <div class="icon-box">
-                    <svg class="icon icon--home-check">
-                      <use xlink:href="./images/sprite.svg#home-check"></use>
-                    </svg>
-                  </div>
-                  <div class="why__item-info">
-                    <h3 class="why__item-title">Сдаём только свои объекты</h3>
-                    <span>
-                      Мы не посредники — все помещения в управлении принадлежат нам. Это ускоряет процессы и даёт гибкость.
-                    </span>
-                  </div>
-                </div>
-                <div class="why__item">
-                  <div class="icon-box">
-                    <svg class="icon icon--broom">
-                      <use xlink:href="./images/sprite.svg#broom"></use>
-                    </svg>
-                  </div>
-                  <div class="why__item-info">
-                    <h3 class="why__item-title">Приводим объекты в порядок</h3>
-                    <span>
-                      Перед сдачей мы переосмысливаем пространство: делаем ремонт, улучшаем инфраструктуру, наводим порядок.
-                    </span>
-                  </div>
-                </div>
-                <div class="why__item">
-                  <div class="why__item-image lazy-image-box">
-                    <img data-src="./images/why/1.jpg" src="./images/1x1.png" data-js-lazy alt="why img" />
-                  </div>
-                </div>
-                <div class="why__item">
-                  <div class="icon-box">
-                    <svg class="icon icon--hands">
-                      <use xlink:href="./images/sprite.svg#hands"></use>
-                    </svg>
-                  </div>
-                  <div class="why__item-info">
-                    <h3 class="why__item-title">Гибкие условия аренды</h3>
-                    <span> Работаем с малым бизнесом и крупными компаниями — подбираем решение под задачи каждого клиента. </span>
-                  </div>
-                </div>
-                <div class="why__item">
-                  <div class="icon-box">
-                    <svg class="icon icon--settings">
-                      <use xlink:href="./images/sprite.svg#settings"></use>
-                    </svg>
-                  </div>
-                  <div class="why__item-info">
-                    <h3 class="why__item-title">Профессиональное обслуживание</h3>
-                    <span> Менеджеры всегда на связи, помогают на всех этапах аренды. </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="offices" id="offices">
-          <div class="container">
-            <div class="offices__inner map">
-              <h2 class="h1">Территория FOSURE</h2>
-              <div class="offices__content">
-                <div class="offices__map" id="offices-map"></div>
-                <div class="offices__accardion accardion">
-                  <div class="offices__accardion-items">
-                    <div class="offices__accardion-item accardion-item">
-                      <div class="accardion-head">
-                        <h3 class="h3">Офис в Москве</h3>
-                        <div class="accardion-icon-box">
-                          <svg class="icon icon--angle-down">
-                            <use xlink:href="./images/sprite.svg#angle-down"></use>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="accardion-body">
-                        <div class="offices__accardion-descr">
-                          <div class="row">
-                            <svg class="icon icon--map-point-stroke">
-                              <use xlink:href="./images/sprite.svg#map-point-stroke"></use>
-                            </svg>
-                            <span>123112, Москва, Пресненская наб., д. 12, башня </span>
-                            <span>«Федерация», офис 4312</span>
-                          </div>
-                          <div class="row">
-                            <svg class="icon icon--clock-stroke">
-                              <use xlink:href="./images/sprite.svg#clock-stroke"></use>
-                            </svg>
-                            <span>Режим работы офиса: пн-пт 09:00–18:00</span>
+            <div class="catalog__inner">
+              <h2 class="catalog__title">Аренда коммерческой недвижимости</h2>
+              <div class="catalog__content">
+                <div class="filter">
+                  <div class="filter__items">
+                    <div class="filter-range filter-range-price">
+                      <button class="filter-range-btn btn btn--sm btn--white" data-js-filter-price>Цена</button>
+                      <div class="filter-range__content-wrapper">
+                        <div class="filter-range__content">
+                          <span>до</span>
+                          <input
+                            class="filter-range__value"
+                            type="number"
+                            name="filter-price"
+                            min="0"
+                            max="50000000"
+                            placeholder="0"
+                            data-js-filter-price-value
+                          />
+                          <span>₽</span>
+                          <div class="filter-range__slider-wrapper">
+                            <div class="filter-range__slider">
+                              <input type="range" min="0" max="50000000" value="0" data-js-filter-price-input />
+                            </div>
                           </div>
                         </div>
-                        <a class="offices__accardion-btn offices-btn btn--link" href="#offices" data-category="moscow"
-                          >Показать на карте</a
-                        >
                       </div>
                     </div>
-                    <div class="offices__accardion-item accardion-item">
-                      <div class="accardion-head">
-                        <h3 class="h3">Красногорск</h3>
-                        <div class="accardion-icon-box">
-                          <svg class="icon icon--angle-down">
-                            <use xlink:href="./images/sprite.svg#angle-down"></use>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="accardion-body">
-                        <div class="offices__accardion-descr">
-                          <div class="row">
-                            <svg class="icon icon--map-point-stroke">
-                              <use xlink:href="./images/sprite.svg#map-point-stroke"></use>
-                            </svg>
-                            <span>123112, Москва, Пресненская наб., д. 12, башня </span>
-                            <span>«Федерация», офис 4312</span>
-                          </div>
-                          <div class="row">
-                            <svg class="icon icon--clock-stroke">
-                              <use xlink:href="./images/sprite.svg#clock-stroke"></use>
-                            </svg>
-                            <span>Режим работы офиса: пн-пт 09:00–18:00</span>
+                    <div class="filter-range filter-range-square">
+                      <button class="filter-range-btn btn btn--sm btn--white" data-js-filter-square>Площадь</button>
+                      <div class="filter-range__content-wrapper">
+                        <div class="filter-range__content">
+                          <span>от</span>
+                          <input
+                            class="filter-range__value"
+                            type="number"
+                            name="filter-square"
+                            min="0"
+                            max="500"
+                            placeholder="0"
+                            data-js-filter-square-value
+                          />
+                          <span>м²</span>
+                          <div class="filter-range__slider-wrapper">
+                            <div class="filter-range__slider">
+                              <input type="range" min="0" max="500" value="0" data-js-filter-square-input />
+                            </div>
                           </div>
                         </div>
-                        <a class="offices__accardion-btn offices-btn btn--link" href="#offices" data-category="krasnogorsk"
-                          >Показать на карте</a
-                        >
                       </div>
                     </div>
-                    <div class="offices__accardion-item accardion-item">
-                      <div class="accardion-head">
-                        <h3 class="h3">Долгопрудный</h3>
-                        <div class="accardion-icon-box">
-                          <svg class="icon icon--angle-down">
-                            <use xlink:href="./images/sprite.svg#angle-down"></use>
-                          </svg>
+                    <div class="filter-dropdown">
+                      <button class="filter-dropdown-btn btn btn--sm btn--white">Тип помещения</button>
+                      <div class="filter-dropdown-list">
+                        <div class="filter-dropdown-items">
+                          <button class="filter-dropdown-item btn btn--white" data-js-filter-dropdown-value="Тип помещения: Офис">
+                            Офис
+                          </button>
+                          <button
+                            class="filter-dropdown-item btn btn--white"
+                            data-js-filter-dropdown-value="Тип помещения: Торговое помещение"
+                          >
+                            Торговое помещение
+                          </button>
+                          <button
+                            class="filter-dropdown-item btn btn--white"
+                            data-js-filter-dropdown-value="Тип помещения: Коворкинг"
+                          >
+                            Коворкинг
+                          </button>
+                          <button
+                            class="filter-dropdown-item btn btn--white"
+                            data-js-filter-dropdown-value="Тип помещения: Beauty-пространство"
+                          >
+                            Beauty-пространство
+                          </button>
+                          <button
+                            class="filter-dropdown-item btn btn--white"
+                            data-js-filter-dropdown-value="Тип помещения: Склад"
+                          >
+                            Склад
+                          </button>
+                          <button
+                            class="filter-dropdown-item btn btn--white"
+                            data-js-filter-dropdown-value="Тип помещения: ПСН (помещение свободного назначения)"
+                          >
+                            ПСН (помещение свободного назначения)
+                          </button>
                         </div>
-                      </div>
-                      <div class="accardion-body">
-                        <div class="offices__accardion-descr">
-                          <div class="row">
-                            <svg class="icon icon--map-point-stroke">
-                              <use xlink:href="./images/sprite.svg#map-point-stroke"></use>
-                            </svg>
-                            <span>123112, Москва, Пресненская наб., д. 12, башня </span>
-                            <span>«Федерация», офис 4312</span>
-                          </div>
-                          <div class="row">
-                            <svg class="icon icon--clock-stroke">
-                              <use xlink:href="./images/sprite.svg#clock-stroke"></use>
-                            </svg>
-                            <span>Режим работы офиса: пн-пт 09:00–18:00</span>
-                          </div>
-                        </div>
-                        <a class="offices__accardion-btn offices-btn btn--link" href="#offices" data-category="dolgoprudny"
-                          >Показать на карте</a
-                        >
                       </div>
                     </div>
-                    <div class="offices__accardion-item accardion-item">
-                      <div class="accardion-head">
-                        <h3 class="h3">Руза</h3>
-                        <div class="accardion-icon-box">
-                          <svg class="icon icon--angle-down">
-                            <use xlink:href="./images/sprite.svg#angle-down"></use>
-                          </svg>
+                    <div class="filter-dropdown">
+                      <button class="filter-dropdown-btn btn btn--sm btn--white">Ремонт</button>
+                      <div class="filter-dropdown-list">
+                        <div class="filter-dropdown-items">
+                          <button class="filter-dropdown-item btn btn--white" data-js-filter-dropdown-value="Ремонт: Ремонт 1">
+                            Ремонт 1
+                          </button>
+                          <button class="filter-dropdown-item btn btn--white" data-js-filter-dropdown-value="Ремонт: Ремонт 2">
+                            Ремонт 2
+                          </button>
+                          <button class="filter-dropdown-item btn btn--white" data-js-filter-dropdown-value="Ремонт: Ремонт 3">
+                            Ремонт 3
+                          </button>
                         </div>
-                      </div>
-                      <div class="accardion-body">
-                        <div class="offices__accardion-descr">
-                          <div class="row">
-                            <svg class="icon icon--map-point-stroke">
-                              <use xlink:href="./images/sprite.svg#map-point-stroke"></use>
-                            </svg>
-                            <span>123112, Москва, Пресненская наб., д. 12, башня </span>
-                            <span>«Федерация», офис 4312</span>
-                          </div>
-                          <div class="row">
-                            <svg class="icon icon--clock-stroke">
-                              <use xlink:href="./images/sprite.svg#clock-stroke"></use>
-                            </svg>
-                            <span>Режим работы офиса: пн-пт 09:00–18:00</span>
-                          </div>
-                        </div>
-                        <a class="offices__accardion-btn offices-btn btn--link" href="#offices" data-category="ruza"
-                          >Показать на карте</a
-                        >
                       </div>
                     </div>
-                    <div class="offices__accardion-item accardion-item">
-                      <div class="accardion-head">
-                        <h3 class="h3">Офис в Москве</h3>
-                        <div class="accardion-icon-box">
-                          <svg class="icon icon--angle-down">
-                            <use xlink:href="./images/sprite.svg#angle-down"></use>
-                          </svg>
+                    <div class="filter-dropdown">
+                      <button class="filter-dropdown-btn btn btn--sm btn--white">Этаж</button>
+                      <div class="filter-dropdown-list">
+                        <div class="filter-dropdown-items">
+                          <button class="filter-dropdown-item btn btn--white" data-js-filter-dropdown-value="Этаж: Этаж 1">
+                            Этаж 1
+                          </button>
+                          <button class="filter-dropdown-item btn btn--white" data-js-filter-dropdown-value="Этаж: Этаж 2">
+                            Этаж 2
+                          </button>
+                          <button class="filter-dropdown-item btn btn--white" data-js-filter-dropdown-value="Этаж: Этаж 3">
+                            Этаж 3
+                          </button>
                         </div>
-                      </div>
-                      <div class="accardion-body">
-                        <div class="offices__accardion-descr">
-                          <div class="row">
-                            <svg class="icon icon--map-point-stroke">
-                              <use xlink:href="./images/sprite.svg#map-point-stroke"></use>
-                            </svg>
-                            <span>123112, Москва, Пресненская наб., д. 12, башня </span>
-                            <span>«Федерация», офис 4312</span>
-                          </div>
-                          <div class="row">
-                            <svg class="icon icon--clock-stroke">
-                              <use xlink:href="./images/sprite.svg#clock-stroke"></use>
-                            </svg>
-                            <span>Режим работы офиса: пн-пт 09:00–18:00</span>
-                          </div>
-                        </div>
-                        <a class="offices__accardion-btn offices-btn btn--link" href="#offices" data-category="moscow"
-                          >Показать на карте</a
-                        >
                       </div>
                     </div>
-                    <div class="offices__accardion-item accardion-item">
-                      <div class="accardion-head">
-                        <h3 class="h3">Красногорск</h3>
-                        <div class="accardion-icon-box">
-                          <svg class="icon icon--angle-down">
-                            <use xlink:href="./images/sprite.svg#angle-down"></use>
-                          </svg>
+                    <div class="filter-dropdown">
+                      <button class="filter-dropdown-btn btn btn--sm btn--white">Парковка</button>
+                      <div class="filter-dropdown-list">
+                        <div class="filter-dropdown-items">
+                          <button
+                            class="filter-dropdown-item btn btn--white"
+                            data-js-filter-dropdown-value="Парковка: Парковка 1"
+                          >
+                            Парковка 1
+                          </button>
+                          <button
+                            class="filter-dropdown-item btn btn--white"
+                            data-js-filter-dropdown-value="Парковка: Парковка 2"
+                          >
+                            Парковка 2
+                          </button>
+                          <button
+                            class="filter-dropdown-item btn btn--white"
+                            data-js-filter-dropdown-value="Парковка: Парковка 3"
+                          >
+                            Парковка 3
+                          </button>
                         </div>
-                      </div>
-                      <div class="accardion-body">
-                        <div class="offices__accardion-descr">
-                          <div class="row">
-                            <svg class="icon icon--map-point-stroke">
-                              <use xlink:href="./images/sprite.svg#map-point-stroke"></use>
-                            </svg>
-                            <span>123112, Москва, Пресненская наб., д. 12, башня </span>
-                            <span>«Федерация», офис 4312</span>
-                          </div>
-                          <div class="row">
-                            <svg class="icon icon--clock-stroke">
-                              <use xlink:href="./images/sprite.svg#clock-stroke"></use>
-                            </svg>
-                            <span>Режим работы офиса: пн-пт 09:00–18:00</span>
-                          </div>
-                        </div>
-                        <a class="offices__accardion-btn offices-btn btn--link" href="#offices" data-category="krasnogorsk"
-                          >Показать на карте</a
-                        >
                       </div>
                     </div>
-                    <div class="offices__accardion-item accardion-item">
-                      <div class="accardion-head">
-                        <h3 class="h3">Долгопрудный</h3>
-                        <div class="accardion-icon-box">
-                          <svg class="icon icon--angle-down">
-                            <use xlink:href="./images/sprite.svg#angle-down"></use>
-                          </svg>
+                    <div class="filter-dropdown">
+                      <button class="filter-dropdown-btn btn btn--sm btn--white">Доступ</button>
+                      <div class="filter-dropdown-list">
+                        <div class="filter-dropdown-items">
+                          <button class="filter-dropdown-item btn btn--white" data-js-filter-dropdown-value="Доступ: Доступ 1">
+                            Доступ 1
+                          </button>
+                          <button class="filter-dropdown-item btn btn--white" data-js-filter-dropdown-value="Доступ: Доступ 2">
+                            Доступ 2
+                          </button>
+                          <button class="filter-dropdown-item btn btn--white" data-js-filter-dropdown-value="Доступ: Доступ 3">
+                            Доступ 3
+                          </button>
                         </div>
-                      </div>
-                      <div class="accardion-body">
-                        <div class="offices__accardion-descr">
-                          <div class="row">
-                            <svg class="icon icon--map-point-stroke">
-                              <use xlink:href="./images/sprite.svg#map-point-stroke"></use>
-                            </svg>
-                            <span>123112, Москва, Пресненская наб., д. 12, башня </span>
-                            <span>«Федерация», офис 4312</span>
-                          </div>
-                          <div class="row">
-                            <svg class="icon icon--clock-stroke">
-                              <use xlink:href="./images/sprite.svg#clock-stroke"></use>
-                            </svg>
-                            <span>Режим работы офиса: пн-пт 09:00–18:00</span>
-                          </div>
-                        </div>
-                        <a class="offices__accardion-btn offices-btn btn--link" href="#offices" data-category="dolgoprudny"
-                          >Показать на карте</a
-                        >
                       </div>
                     </div>
-                    <div class="offices__accardion-item accardion-item">
-                      <div class="accardion-head">
-                        <h3 class="h3">Руза</h3>
-                        <div class="accardion-icon-box">
-                          <svg class="icon icon--angle-down">
-                            <use xlink:href="./images/sprite.svg#angle-down"></use>
-                          </svg>
-                        </div>
+                  </div>
+                  <div class="filter__values">
+                    <div class="filter-range-values">
+                      <div class="filter-values-item visually-hidden" data-js-filter-price-tag>
+                        до <span data-js-filter-price-tag-value>0</span> ₽
                       </div>
-                      <div class="accardion-body">
-                        <div class="offices__accardion-descr">
-                          <div class="row">
-                            <svg class="icon icon--map-point-stroke">
-                              <use xlink:href="./images/sprite.svg#map-point-stroke"></use>
-                            </svg>
-                            <span>123112, Москва, Пресненская наб., д. 12, башня </span>
-                            <span>«Федерация», офис 4312</span>
-                          </div>
-                          <div class="row">
-                            <svg class="icon icon--clock-stroke">
-                              <use xlink:href="./images/sprite.svg#clock-stroke"></use>
-                            </svg>
-                            <span>Режим работы офиса: пн-пт 09:00–18:00</span>
-                          </div>
-                        </div>
-                        <a class="offices__accardion-btn offices-btn btn--link" href="#offices" data-category="ruza"
-                          >Показать на карте</a
-                        >
+                      <div class="filter-values-item visually-hidden" data-js-filter-square-tag>
+                        от <span data-js-filter-square-tag-value>0</span> м²
                       </div>
                     </div>
+                    <div class="filter-dropdown-values"></div>
+                  </div>
+                </div>
+
+                <div class="catalog__results">
+                  <div class="not-found">
+                    <img src="./images/icon/search.svg" width="160" height="160" alt="" />
+                    <span
+                      >Извините, по вашему запросу ничего не найдено. <br />Но вы можете изменить свой запрос и повторить
+                      попытку.</span
+                    >
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="suggestions">
+        <section class="form-section">
           <div class="container">
-            <div class="suggestions__inner">
-              <div class="suggestions__info">
-                <h2 class="h2">
-                  Хотите арендовать современное пространство<br />
-                  или продать свой объект?
-                </h2>
-                <span class="subtitle">Свяжитесь с нами — FOSURE всегда открыта к диалогу</span>
+            <div class="form-section__inner">
+              <div class="form-section__info">
+                <h2 class="form-section__title">Нужна консультация?</h2>
+                <span class="form-section__subtitle"
+                  >Расскажем об условиях аренды, доступных объектах и процессе сотрудничества</span
+                >
               </div>
-              <div class="suggestions__items">
-                <a class="suggestions__item" href="catalog.html">
-                  <div class="icon-box">
-                    <svg class="icon icon--arrow-right">
-                      <use xlink:href="./images/sprite.svg#arrow-right"></use>
-                    </svg>
+              <form class="form">
+                <div class="form__inputs">
+                  <div class="input-box">
+                    <input class="_req" type="text" name="Имя" placeholder="Имя" autocomplete="off" />
+                    <span class="input-info">
+                      <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
+                    </span>
                   </div>
-                  <span>Посмотреть объекты</span>
-                </a>
-                <button class="suggestions__item" data-js-modal-open data-path="modal-object">
-                  <div class="icon-box">
-                    <svg class="icon icon--arrow-right">
-                      <use xlink:href="./images/sprite.svg#arrow-right"></use>
-                    </svg>
+                  <div class="input-box">
+                    <input class="_req _phone" type="tel" name="Телефон" placeholder="+7 (−−−) −−− −− −−" autocomplete="off" />
+                    <span class="input-info">
+                      <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
+                    </span>
                   </div>
-                  <span>Предложить объект</span>
-                </button>
-                <button class="suggestions__item" data-js-modal-open data-path="modal-consultation">
-                  <div class="icon-box">
-                    <svg class="icon icon--arrow-right">
-                      <use xlink:href="./images/sprite.svg#arrow-right"></use>
-                    </svg>
+                  <div class="input-box">
+                    <button class="btn btn--black" type="submit">Отправить</button>
                   </div>
-                  <span>Перезвоните мне</span>
-                </button>
+                </div>
+              </form>
+              <div class="form-section__bottom">
+                <span class="form__privacy"
+                  >Отправляя данные, вы соглашаетесь с
+                  <a href="privacy.html">Политикой конфиденциальности и условиями Пользовательского соглашения</a></span
+                >
               </div>
             </div>
           </div>

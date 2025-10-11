@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./images/favicon.svg" type="image/x-icon" />
-    <title>Каталог</title>
+    <title>Карточка объекта</title>
     <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -21,7 +21,7 @@
 
             <nav class="nav header__nav">
               <ul class="nav__list">
-                <li class="nav__item"><a href="catalog.html" class="nav__link _active">Объекты</a></li>
+                <li class="nav__item"><a href="catalog.html" class="nav__link">Объекты</a></li>
                 <li class="nav__item"><a href="about.html" class="nav__link">О компании</a></li>
                 <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
                 <li class="nav__item"><a href="news.html" class="nav__link">Новости и статьи</a></li>
@@ -53,11 +53,98 @@
       </div>
 
       <main class="main">
-        <section class="catalog">
+        <section class="place-card-slider">
           <div class="container">
-            <div class="catalog__inner">
-              <h2 class="catalog__title">Аренда коммерческой недвижимости</h2>
-              <div class="catalog__content">
+            <div class="place-card-slider__inner inner">
+              <h1 class="h1">Коммерческая недвижимость в Art Residence</h1>
+              <div class="place-card-slider__content">
+                <button class="btn btn--white btn--icon-sm swiper-button-prev place-card-swiper-btn-prev">
+                  <svg class="icon icon--arrow-left">
+                    <use xlink:href="./images/sprite.svg#arrow-left"></use>
+                  </svg>
+                </button>
+                <div class="place-card-slider__swiper swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="place-card-slider__slide">
+                        <img src="./images/place-card/1.jpg" width="1240" height="520" alt="" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="place-card-slider__slide">
+                        <img src="./images/place-card/1.jpg" width="1240" height="520" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn--white btn--icon-sm swiper-button-next place-card-swiper-btn-next">
+                  <svg class="icon icon--arrow-right">
+                    <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="card-map">
+          <div class="container">
+            <div class="card-map__inner">
+              <h2 class="card-map__title">Расположение объекта</h2>
+              <div class="card-map__info">
+                <div class="card__header-address">
+                  <!-- <svg class="icon icon--map-point">
+                    <use xlink:href="./images/sprite.svg#map-point"></use>
+                  </svg> -->
+                  <span>Москва, район Митино, ул. Барышиха, д. 38</span>
+                </div>
+                <div class="card__header-metros">
+                  <div class="metro-box">
+                    <svg class="icon icon--metro" style="fill: #ff3838">
+                      <use xlink:href="./images/sprite.svg#metro"></use>
+                    </svg>
+                    <span class="metro-name">Калужская</span>
+                    <div class="metro-time">
+                      <span>9 мин.</span>
+                      <svg class="icon icon--walk">
+                        <use xlink:href="./images/sprite.svg#walk"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="metro-box">
+                    <svg class="icon icon--metro" style="fill: #11a75c">
+                      <use xlink:href="./images/sprite.svg#metro"></use>
+                    </svg>
+                    <span class="metro-name">Беляево</span>
+                    <div class="metro-time">
+                      7 мин.
+                      <svg class="icon icon--car">
+                        <use xlink:href="./images/sprite.svg#car"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="metro-box">
+                    <svg class="icon icon--metro" style="fill: #ffc700">
+                      <use xlink:href="./images/sprite.svg#metro"></use>
+                    </svg>
+                    <span class="metro-name">Новаторская</span>
+                    <div class="metro-time">
+                      12 мин.
+                      <svg class="icon icon--car">
+                        <use xlink:href="./images/sprite.svg#car"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-map__map map" id="card-map"></div>
+            </div>
+          </div>
+        </section>
+        <section class="place-catalog">
+          <div class="container">
+            <div class="place-catalog__inner inner">
+              <h1 class="h1">Каталог помещений</h1>
+              <div class="filter-wrapper">
                 <div class="filter">
                   <div class="filter__items">
                     <div class="filter-range filter-range-price">
@@ -233,309 +320,601 @@
                   </div>
                 </div>
 
-                <div class="catalog__items">
-                  <a class="card-place" href="place-card.html">
-                    <div class="card__image-box">
-                      <div class="card__tags">
-                        <button class="btn btn--white btn--sm btn-tag" style="color: #606977">
-                          <svg class="icon icon--tag-passed" style="stroke: currentColor">
-                            <use xlink:href="./images/sprite.svg#tag-passed"></use>
-                          </svg>
-                          <span>Сдано</span>
-                        </button>
-                      </div>
-                      <img
-                        data-src="./images/card-place/2.jpg"
-                        src="./images/1x1.png"
-                        width="610"
-                        height="300"
-                        data-js-lazy
-                        alt=""
-                      />
+                <div class="filter-action">
+                  <div class="dropdown">
+                    <button class="dropdown__button">Сортировать</button>
+                    <ul class="dropdown__list">
+                      <li class="dropdown__list-item" data-value="sort 1">sort 1</li>
+                      <li class="dropdown__list-item" data-value="sort 2">sort 2</li>
+                      <li class="dropdown__list-item" data-value="sort 3">sort 3</li>
+                      <li class="dropdown__list-item" data-value="sort 4">sort 4</li>
+                    </ul>
+                    <input type="text" name="select-category" value="" class="dropdown__input-hidden" />
+                  </div>
+
+                  <div class="place-catalog__switch-wrapper">
+                    <div class="switch">
+                      <input class="switch-input" id="place-catalog-passed" type="checkbox" name="place-catalog-passed" />
                     </div>
-                    <div class="card__info">
-                      <div class="card__info-descr">
-                        <h3 class="cards__item-title">Art Residence</h3>
-                        <div class="metro-box">
-                          <svg class="icon icon--metro" style="fill: #11a75c">
-                            <use xlink:href="./images/sprite.svg#metro"></use>
-                          </svg>
-                          <span class="metro-name">Беляево</span>
-                          <div class="metro-time">
-                            <span>7 мин.</span>
-                            <svg class="icon icon--car">
-                              <use xlink:href="./images/sprite.svg#car"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                      <span class="cards__item-price">от 75 000 ₽/мес</span>
-                    </div>
-                  </a>
-                  <a class="card-place" href="place-card.html">
-                    <div class="card__image-box">
-                      <div class="card__tags">
-                        <button class="btn btn--white btn--sm btn-tag" style="color: #11a75c">
-                          <svg class="icon icon--tag-new" style="stroke: currentColor">
-                            <use xlink:href="./images/sprite.svg#tag-new"></use>
-                          </svg>
-                          <span>Новое</span>
-                        </button>
-                      </div>
-                      <img
-                        data-src="./images/card-place/1.jpg"
-                        src="./images/1x1.png"
-                        width="610"
-                        height="300"
-                        data-js-lazy
-                        alt=""
-                      />
-                    </div>
-                    <div class="card__info">
-                      <div class="card__info-descr">
-                        <h3 class="cards__item-title">Art Residence</h3>
-                        <div class="metro-box">
-                          <svg class="icon icon--metro" style="fill: #11a75c">
-                            <use xlink:href="./images/sprite.svg#metro"></use>
-                          </svg>
-                          <span class="metro-name">Беляево</span>
-                          <div class="metro-time">
-                            <span>7 мин.</span>
-                            <svg class="icon icon--car">
-                              <use xlink:href="./images/sprite.svg#car"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                      <span class="cards__item-price">от 75 000 ₽/мес</span>
-                    </div>
-                  </a>
-                  <a class="card-place" href="place-card.html">
-                    <div class="card__image-box">
-                      <div class="card__tags">
-                        <button class="btn btn--white btn--sm btn-tag" style="color: #11a75c">
-                          <svg class="icon icon--tag-new" style="stroke: currentColor">
-                            <use xlink:href="./images/sprite.svg#tag-new"></use>
-                          </svg>
-                          <span>Новое</span>
-                        </button>
-                      </div>
-                      <img
-                        data-src="./images/card-place/empty.jpg"
-                        src="./images/1x1.png"
-                        width="610"
-                        height="300"
-                        data-js-lazy
-                        alt=""
-                      />
-                    </div>
-                    <div class="card__info">
-                      <div class="card__info-descr">
-                        <h3 class="cards__item-title">Art Residence</h3>
-                        <div class="metro-box">
-                          <svg class="icon icon--metro" style="fill: #11a75c">
-                            <use xlink:href="./images/sprite.svg#metro"></use>
-                          </svg>
-                          <span class="metro-name">Беляево</span>
-                          <div class="metro-time">
-                            <span>7 мин.</span>
-                            <svg class="icon icon--car">
-                              <use xlink:href="./images/sprite.svg#car"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                      <span class="cards__item-price">от 75 000 ₽/мес</span>
-                    </div>
-                  </a>
-                  <a class="card-place" href="place-card.html">
-                    <div class="card__image-box">
-                      <div class="card__tags"></div>
-                      <img
-                        data-src="./images/card-place/4.jpg"
-                        src="./images/1x1.png"
-                        width="610"
-                        height="300"
-                        data-js-lazy
-                        alt=""
-                      />
-                    </div>
-                    <div class="card__info">
-                      <div class="card__info-descr">
-                        <h3 class="cards__item-title">Art Residence</h3>
-                        <div class="metro-box">
-                          <svg class="icon icon--metro" style="fill: #11a75c">
-                            <use xlink:href="./images/sprite.svg#metro"></use>
-                          </svg>
-                          <span class="metro-name">Беляево</span>
-                          <div class="metro-time">
-                            <span>7 мин.</span>
-                            <svg class="icon icon--car">
-                              <use xlink:href="./images/sprite.svg#car"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                      <span class="cards__item-price">от 75 000 ₽/мес</span>
-                    </div>
-                  </a>
-                  <a class="card-place" href="place-card.html">
-                    <div class="card__image-box">
-                      <div class="card__tags"></div>
-                      <img
-                        data-src="./images/card-place/2.jpg"
-                        src="./images/1x1.png"
-                        width="610"
-                        height="300"
-                        data-js-lazy
-                        alt=""
-                      />
-                    </div>
-                    <div class="card__info">
-                      <div class="card__info-descr">
-                        <h3 class="cards__item-title">Art Residence</h3>
-                        <div class="metro-box">
-                          <svg class="icon icon--metro" style="fill: #11a75c">
-                            <use xlink:href="./images/sprite.svg#metro"></use>
-                          </svg>
-                          <span class="metro-name">Беляево</span>
-                          <div class="metro-time">
-                            <span>7 мин.</span>
-                            <svg class="icon icon--car">
-                              <use xlink:href="./images/sprite.svg#car"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                      <span class="cards__item-price">от 75 000 ₽/мес</span>
-                    </div>
-                  </a>
-                  <a class="card-place" href="place-card.html">
-                    <div class="card__image-box">
-                      <div class="card__tags"></div>
-                      <img
-                        data-src="./images/card-place/1.jpg"
-                        src="./images/1x1.png"
-                        width="610"
-                        height="300"
-                        data-js-lazy
-                        alt=""
-                      />
-                    </div>
-                    <div class="card__info">
-                      <div class="card__info-descr">
-                        <h3 class="cards__item-title">Art Residence</h3>
-                        <div class="metro-box">
-                          <svg class="icon icon--metro" style="fill: #11a75c">
-                            <use xlink:href="./images/sprite.svg#metro"></use>
-                          </svg>
-                          <span class="metro-name">Беляево</span>
-                          <div class="metro-time">
-                            <span>7 мин.</span>
-                            <svg class="icon icon--car">
-                              <use xlink:href="./images/sprite.svg#car"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                      <span class="cards__item-price">от 75 000 ₽/мес</span>
-                    </div>
-                  </a>
-                  <a class="card-place" href="place-card.html">
-                    <div class="card__image-box">
-                      <div class="card__tags">
-                        <button class="btn btn--white btn--sm btn-tag" style="color: #ff4e4e">
-                          <svg class="icon icon--tag-left" style="stroke: currentColor">
-                            <use xlink:href="./images/sprite.svg#tag-left"></use>
-                          </svg>
-                          <span>Осталось 5 помещений</span>
-                        </button>
-                      </div>
-                      <img
-                        data-src="./images/card-place/3.jpg"
-                        src="./images/1x1.png"
-                        width="610"
-                        height="300"
-                        data-js-lazy
-                        alt=""
-                      />
-                    </div>
-                    <div class="card__info">
-                      <div class="card__info-descr">
-                        <h3 class="cards__item-title">Art Residence</h3>
-                        <div class="metro-box">
-                          <svg class="icon icon--metro" style="fill: #11a75c">
-                            <use xlink:href="./images/sprite.svg#metro"></use>
-                          </svg>
-                          <span class="metro-name">Беляево</span>
-                          <div class="metro-time">
-                            <span>7 мин.</span>
-                            <svg class="icon icon--car">
-                              <use xlink:href="./images/sprite.svg#car"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                      <span class="cards__item-price">от 75 000 ₽/мес</span>
-                    </div>
-                  </a>
-                  <a class="card-place" href="place-card.html">
-                    <div class="card__image-box">
-                      <div class="card__tags"></div>
-                      <img
-                        data-src="./images/card-place/4.jpg"
-                        src="./images/1x1.png"
-                        width="610"
-                        height="300"
-                        data-js-lazy
-                        alt=""
-                      />
-                    </div>
-                    <div class="card__info">
-                      <div class="card__info-descr">
-                        <h3 class="cards__item-title">Art Residence</h3>
-                        <div class="metro-box">
-                          <svg class="icon icon--metro" style="fill: #11a75c">
-                            <use xlink:href="./images/sprite.svg#metro"></use>
-                          </svg>
-                          <span class="metro-name">Беляево</span>
-                          <div class="metro-time">
-                            <span>7 мин.</span>
-                            <svg class="icon icon--car">
-                              <use xlink:href="./images/sprite.svg#car"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                      <span class="cards__item-price">от 75 000 ₽/мес</span>
-                    </div>
-                  </a>
+                    <label for="place-catalog-passed">Сданные помещения</label>
+                  </div>
                 </div>
-                <div class="pagination">
-                  <ul class="pagination__list">
-                    <li class="pagination__item">
-                      <a class="btn pagination__link _active" href="#!">1</a>
-                    </li>
-                    <li class="pagination__item">
-                      <a class="btn pagination__link" href="#!">2</a>
-                    </li>
-                    <li class="pagination__item">
-                      <a class="btn pagination__link" href="#!">3</a>
-                    </li>
-                    <li class="pagination__item">
-                      <a class="btn pagination__link" href="#!">4</a>
-                    </li>
-                    <li class="pagination__item">
-                      <a class="btn pagination__link" href="#!">5</a>
-                    </li>
-                  </ul>
-                  <a class="btn btn--black pagination__btn pagination__next" href="#!">
-                    <span>Следующая</span>
-                    <svg class="icon icon--arrow-right">
-                      <use xlink:href="./images/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
+              </div>
+              <div class="place-catalog__items">
+                <a class="cards__item" href="room-card.html">
+                  <div class="cards__item-image-wrapper">
+                    <button class="btn btn--white btn--sm btn-tag" style="color: #1a1d21">
+                      <svg class="icon icon--tag-waiting" style="fill: currentColor">
+                        <use xlink:href="./images/sprite.svg#tag-waiting"></use>
+                      </svg>
+                      <span>В лист ожидания</span>
+                    </button>
+
+                    <div class="cards__image-swiper swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/1.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/2.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/3.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/4.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/5.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cards__image-swiper-pagination"></div>
+                      <ul class="hover-pagination"></ul>
+                    </div>
+                  </div>
+                  <div class="cards__item-info">
+                    <div class="cards__item-descr">
+                      <span class="cards__item-title">Помещение, 45 м²</span>
+                      <span class="cards__item-subtitle">Корпус 1, Секция 3</span>
+                    </div>
+                    <div class="cards__item-tags">
+                      <span>офис</span>
+                      <span>40 м²</span>
+                      <span>2 этаж</span>
+                    </div>
+                    <div class="cards__item-price">
+                      <span>75 000 ₽/мес</span>
+                    </div>
+                  </div>
+                </a>
+                <a class="cards__item" href="room-card.html">
+                  <div class="cards__item-image-wrapper">
+                    <div class="cards__image-swiper swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/2.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/3.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/4.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/5.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/6.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cards__image-swiper-pagination"></div>
+                      <ul class="hover-pagination"></ul>
+                    </div>
+                  </div>
+                  <div class="cards__item-info">
+                    <div class="cards__item-descr">
+                      <span class="cards__item-title">Помещение, 45 м²</span>
+                      <span class="cards__item-subtitle">Корпус 1, Секция 3</span>
+                    </div>
+                    <div class="cards__item-tags">
+                      <span>офис</span>
+                      <span>40 м²</span>
+                      <span>2 этаж</span>
+                    </div>
+                    <div class="cards__item-price">
+                      <span>75 000 ₽/мес</span>
+                    </div>
+                  </div>
+                </a>
+                <a class="cards__item" href="room-card.html">
+                  <div class="cards__item-image-wrapper">
+                    <button class="btn btn--white btn--sm btn-tag" style="color: #11a75c">
+                      <svg class="icon icon--tag-new" style="stroke: currentColor">
+                        <use xlink:href="./images/sprite.svg#tag-new"></use>
+                      </svg>
+                      <span>Новое</span>
+                    </button>
+
+                    <div class="cards__image-swiper swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/3.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/4.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/5.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/6.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/1.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cards__image-swiper-pagination"></div>
+                      <ul class="hover-pagination"></ul>
+                    </div>
+                  </div>
+                  <div class="cards__item-info">
+                    <div class="cards__item-descr">
+                      <span class="cards__item-title">Помещение, 45 м²</span>
+                      <span class="cards__item-subtitle">Корпус 1, Секция 3</span>
+                    </div>
+                    <div class="cards__item-tags">
+                      <span>офис</span>
+                      <span>40 м²</span>
+                      <span>2 этаж</span>
+                    </div>
+                    <div class="cards__item-price">
+                      <span>75 000 ₽/мес</span>
+                    </div>
+                  </div>
+                </a>
+                <a class="cards__item" href="room-card.html">
+                  <div class="cards__item-image-wrapper">
+                    <div class="cards__image-swiper swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/1.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/2.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/3.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/4.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/5.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cards__image-swiper-pagination"></div>
+                      <ul class="hover-pagination"></ul>
+                    </div>
+                  </div>
+                  <div class="cards__item-info">
+                    <div class="cards__item-descr">
+                      <span class="cards__item-title">Помещение, 45 м²</span>
+                      <span class="cards__item-subtitle">Корпус 1, Секция 3</span>
+                    </div>
+                    <div class="cards__item-tags">
+                      <span>офис</span>
+                      <span>40 м²</span>
+                      <span>2 этаж</span>
+                    </div>
+                    <div class="cards__item-price">
+                      <span>75 000 ₽/мес</span>
+                    </div>
+                  </div>
+                </a>
+                <a class="cards__item" href="room-card.html">
+                  <div class="cards__item-image-wrapper">
+                    <button class="btn btn--white btn--sm btn-tag" style="color: #606977">
+                      <svg class="icon icon--tag-passed" style="stroke: currentColor">
+                        <use xlink:href="./images/sprite.svg#tag-passed"></use>
+                      </svg>
+                      <span>Сдано</span>
+                    </button>
+
+                    <div class="cards__image-swiper swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/2.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/3.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/4.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/5.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/6.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cards__image-swiper-pagination"></div>
+                      <ul class="hover-pagination"></ul>
+                    </div>
+                  </div>
+                  <div class="cards__item-info">
+                    <div class="cards__item-descr">
+                      <span class="cards__item-title">Помещение, 45 м²</span>
+                      <span class="cards__item-subtitle">Корпус 1, Секция 3</span>
+                    </div>
+                    <div class="cards__item-tags">
+                      <span>офис</span>
+                      <span>40 м²</span>
+                      <span>2 этаж</span>
+                    </div>
+                    <div class="cards__item-price">
+                      <span>75 000 ₽/мес</span>
+                    </div>
+                  </div>
+                </a>
+                <a class="cards__item" href="room-card.html">
+                  <div class="cards__item-image-wrapper">
+                    <div class="cards__image-swiper swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/3.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/4.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/5.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/6.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="cards__item-image">
+                            <img
+                              data-src="./images/cards/1.jpg"
+                              src="./images/1x1.png"
+                              width="571"
+                              height="392"
+                              data-js-lazy
+                              alt="card"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cards__image-swiper-pagination"></div>
+                      <ul class="hover-pagination"></ul>
+                    </div>
+                  </div>
+                  <div class="cards__item-info">
+                    <div class="cards__item-descr">
+                      <span class="cards__item-title">Помещение, 45 м²</span>
+                      <span class="cards__item-subtitle">Корпус 1, Секция 3</span>
+                    </div>
+                    <div class="cards__item-tags">
+                      <span>офис</span>
+                      <span>40 м²</span>
+                      <span>2 этаж</span>
+                    </div>
+                    <div class="cards__item-price">
+                      <span>75 000 ₽/мес</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="pagination">
+                <ul class="pagination__list">
+                  <li class="pagination__item">
+                    <a class="btn pagination__link _active" href="#!">1</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="btn pagination__link" href="#!">2</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="btn pagination__link" href="#!">3</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="btn pagination__link" href="#!">4</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="btn pagination__link" href="#!">5</a>
+                  </li>
+                </ul>
+                <a class="btn btn--black pagination__btn pagination__next" href="#!">
+                  <span>Следующая</span>
+                  <svg class="icon icon--arrow-right">
+                    <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
