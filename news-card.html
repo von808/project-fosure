@@ -60,10 +60,7 @@
           <div class="container">
             <div class="news-card__inner inner">
               <aside class="news-card__aside">
-                <a
-                  class="btn btn--text btn--sm"
-                  href="news.html"
-                >
+                <a class="btn btn--text btn--sm" href="news.html">
                   <svg class="icon icon--arrow-left">
                     <use xlink:href="./images/sprite.svg#arrow-left"></use>
                   </svg>
@@ -74,20 +71,19 @@
                 <div class="news-card__header">
                   <h1 class="h2 news-card__title">Новый бизнес-центр Art Residence открыт для&nbsp;аренды</h1>
                   <div class="news-card__header-box">
-                    <time
-                      class="date"
-                      datetime="2025-09-25"
-                      >25 сентября 2025</time
-                    >
-                    <a
-                      class="btn btn--text btn--sm"
-                      href="news.html"
-                    >
-                      <svg class="icon icon--share">
-                        <use xlink:href="./images/sprite.svg#share"></use>
-                      </svg>
-                      <span>Поделиться</span>
-                    </a>
+                    <time class="date" datetime="2025-09-25">25 сентября 2025</time>
+                    <div class="news-card__shared">
+                      <button class="btn btn--text btn--sm news-card__shared-btn" data-js-news-share-btn>
+                        <svg class="icon icon--share">
+                          <use xlink:href="./images/sprite.svg#share"></use>
+                        </svg>
+                        <span>Поделиться</span>
+                      </button>
+                      <div class="news-card__shared-copied">
+                        <img src="./images/icon/check-green.svg" alt="" />
+                        <span>Ссылка скопирована</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <img
@@ -101,22 +97,25 @@
                 />
                 <div class="news-card__descr">
                   <p>
-                    В городе появился современный бизнес-центр, который уже готов принять новых арендаторов. Здание отвечает всем требованиям современного коммерческого пространства: просторные офисы с панорамными окнами, удобная планировка, современные инженерные системы и охраняемая территория.
+                    В городе появился современный бизнес-центр, который уже готов принять новых арендаторов. Здание отвечает всем
+                    требованиям современного коммерческого пространства: просторные офисы с панорамными окнами, удобная
+                    планировка, современные инженерные системы и охраняемая территория.
                   </p>
                   <p>
-                    Арендаторы смогут выбрать помещения разной площади — от компактных офисов для небольших команд до просторных open space формата. В здании предусмотрены конференц-залы, зоны для переговоров, кафе и подземный паркинг.
+                    Арендаторы смогут выбрать помещения разной площади — от компактных офисов для небольших команд до просторных
+                    open space формата. В здании предусмотрены конференц-залы, зоны для переговоров, кафе и подземный паркинг.
                   </p>
                   <span>Окружение проекта</span>
                   <p>
-                    Особое внимание уделено инфраструктуре: бизнес-центр расположен в деловом районе, рядом с остановками общественного транспорта и выездом на основные магистрали города.
+                    Особое внимание уделено инфраструктуре: бизнес-центр расположен в деловом районе, рядом с остановками
+                    общественного транспорта и выездом на основные магистрали города.
                   </p>
                   <p>
-                    Открытие центра — отличная возможность для компаний, которые ищут современное и комфортное пространство для работы и развития бизнеса.
+                    Открытие центра — отличная возможность для компаний, которые ищут современное и комфортное пространство для
+                    работы и развития бизнеса.
                   </p>
-                  <hr>
-                  <p>
-                    Пocмoтpeть пpимepы сдаваемых oбъeктoв нa caйтe — <a href="https://fosure.ru">https://fosure.ru</a>
-                  </p>
+                  <hr />
+                  <p>Пocмoтpeть пpимepы сдаваемых oбъeктoв нa caйтe — <a href="https://fosure.ru">https://fosure.ru</a></p>
                 </div>
               </div>
             </div>
@@ -134,36 +133,19 @@
               <form class="form">
                 <div class="form__inputs">
                   <div class="input-box">
-                    <input
-                      class="_req"
-                      type="text"
-                      name="Имя"
-                      placeholder="Имя"
-                      autocomplete="off"
-                    />
+                    <input class="_req" type="text" name="Имя" placeholder="Имя" autocomplete="off" />
                     <span class="input-info">
                       <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
                     </span>
                   </div>
                   <div class="input-box">
-                    <input
-                      class="_req _phone"
-                      type="tel"
-                      name="Телефон"
-                      placeholder="+7 (−−−) −−− −− −−"
-                      autocomplete="off"
-                    />
+                    <input class="_req _phone" type="tel" name="Телефон" placeholder="+7 (−−−) −−− −− −−" autocomplete="off" />
                     <span class="input-info">
                       <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
                     </span>
                   </div>
                   <div class="input-box">
-                    <button
-                      class="btn btn--black"
-                      type="submit"
-                    >
-                      Отправить
-                    </button>
+                    <button class="btn btn--black" type="submit">Отправить</button>
                   </div>
                 </div>
               </form>
@@ -309,11 +291,7 @@
 </div>
 </div>
                 <div class="cards__bottom">
-                  <a
-                    class="btn btn--black"
-                    href="news.html"
-                    >Смотреть все новости</a
-                  >
+                  <a class="btn btn--black" href="news.html">Смотреть все новости</a>
                   <div class="swiper-btns">
                     <button class="btn btn--white btn--icon-sm swiper-button-prev">
                       <svg class="icon icon--arrow-left">
