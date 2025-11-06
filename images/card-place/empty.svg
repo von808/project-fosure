@@ -252,7 +252,7 @@
       <stop offset="-2" stop-color="#dfe0e1">
         <animate dur="2s" attributeName="offset" fill="freeze" from="-2" to="1" repeatCount="indefinite" />
       </stop>
-      <stop offset="-1" stop-color="#d5d5d5">
+      <stop offset="-1" stop-color="#b3b4b5">
         <animate dur="2s" attributeName="offset" fill="freeze" from="-1" to="2" repeatCount="indefinite" />
       </stop>
       <stop offset="0" stop-color="#dfe0e1">
