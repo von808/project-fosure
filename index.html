@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./images/favicon.svg" type="image/x-icon" />
-    <title>FOSURE</title>
-    <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./images/favicon.svg" type="image/x-icon" />
+  <title>FOSURE</title>
+  <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
 
   <body>
+    
     <div class="wrapper">
       <header class="header" id="header">
-        <div class="container">
-          <div class="header__inner">
-            <a href="./" class="logo">
-              <img class="logo--mini" src="./images/logo-mini.svg" alt="logo" />
-              <img class="logo--full" src="./images/logo-full.svg" alt="logo" />
-            </a>
+  <div class="container">
+    <div class="header__inner">
+      <a href="./" class="logo">
+        <img class="logo--mini" src="./images/logo-mini.svg" alt="logo" />
+        <img class="logo--full" src="./images/logo-full.svg" alt="logo" />
+      </a>
 
-            <nav class="nav header__nav">
-              <ul class="nav__list">
-                <li class="nav__item"><a href="catalog.html" class="nav__link">Объекты</a></li>
-                <li class="nav__item"><a href="about.html" class="nav__link">О компании</a></li>
-                <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
-                <li class="nav__item"><a href="news.html" class="nav__link">Новости и статьи</a></li>
-              </ul>
-            </nav>
-
-            <div class="header__btns">
-              <button class="nav__link" data-js-modal-open data-path="modal-object">Предложить объект</button>
-              <button class="btn btn--black btn--sm" data-js-modal-open data-path="modal-consultation">Связаться с нами</button>
-            </div>
-
-            <button class="burger-btn">
-              <span class="burger-icon"></span>
-            </button>
-          </div>
-        </div>
-      </header>
-      <div class="burger-menu">
-        <ul class="burger-menu__list">
-          <li class="nav__item"><a href="catalog.html" class="nav__link">Объекты</a></li>
-          <li class="nav__item"><a href="about.html" class="nav__link">О компании</a></li>
-          <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
-          <li class="nav__item"><a href="news.html" class="nav__link">Новости и статьи</a></li>
+      <nav class="nav header__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="catalog.html" class="nav__link ">Объекты</a></li>
+          <li class="nav__item"><a href="about.html" class="nav__link ">О компании</a></li>
+          <li class="nav__item"><a href="contacts.html" class="nav__link ">Контакты</a></li>
+          <li class="nav__item"><a href="news.html" class="nav__link ">Новости и статьи</a></li>
         </ul>
-        <div class="burger-menu__btns">
-          <button class="btn btn--white" data-js-modal-open data-path="modal-object">Предложить объект</button>
-          <button class="btn btn--black" data-js-modal-open data-path="modal-consultation">Связаться с нами</button>
-        </div>
+      </nav>
+
+      <div class="header__btns">
+        <button class="nav__link" data-js-modal-open data-path="modal-object">Предложить объект</button>
+        <button class="btn btn--black btn--sm" data-js-modal-open data-path="modal-consultation">Связаться с нами</button>
       </div>
+
+      <button class="burger-btn">
+        <span class="burger-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="burger-menu">
+  <ul class="burger-menu__list">
+    <li class="nav__item"><a href="catalog.html" class="nav__link">Объекты</a></li>
+    <li class="nav__item"><a href="about.html" class="nav__link">О компании</a></li>
+    <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+    <li class="nav__item"><a href="news.html" class="nav__link">Новости и статьи</a></li>
+  </ul>
+  <div class="burger-menu__btns">
+    <button class="btn btn--white" data-js-modal-open data-path="modal-object">Предложить объект</button>
+    <button class="btn btn--black" data-js-modal-open data-path="modal-consultation">Связаться с нами</button>
+  </div>
+</div>
+
 
       <main class="main">
         <section class="hero">
@@ -103,208 +106,182 @@
             <div class="cards__inner">
               <h2 class="h1">Доступно к аренде</h2>
               <div class="cards-place__swiper swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a class="card-place" href="place-card.html">
-                      <div class="card__image-box">
-                        <div class="card__tags">
-                          <button class="btn btn--white btn--sm btn-tag" style="color: #606977">
-                            <svg class="icon icon--tag-passed" style="stroke: currentColor">
-                              <use xlink:href="./images/sprite.svg#tag-passed"></use>
-                            </svg>
-                            <span>Сдано</span>
-                          </button>
-                        </div>
-                        <img
-                          data-src="./images/card-place/1.jpg"
-                          src="./images/1x1.png"
-                          width="610"
-                          height="300"
-                          data-js-lazy
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__info">
-                        <div class="card__info-descr">
-                          <h3 class="cards__item-title">Art Residence</h3>
-                          <div class="metro-box">
-                            <svg class="icon icon--metro" style="fill: #11a75c">
-                              <use xlink:href="./images/sprite.svg#metro"></use>
-                            </svg>
-                            <span class="metro-name">Беляево</span>
-                            <div class="metro-time">
-                              <span>7 мин.</span>
-                              <svg class="icon icon--car">
-                                <use xlink:href="./images/sprite.svg#car"></use>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <span class="cards__item-price">от 75 000 ₽/мес</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="card-place" href="place-card.html">
-                      <div class="card__image-box">
-                        <div class="card__tags">
-                          <button class="btn btn--white btn--sm btn-tag" style="color: #ff4e4e">
-                            <svg class="icon icon--tag-last" style="stroke: currentColor">
-                              <use xlink:href="./images/sprite.svg#tag-last"></use>
-                            </svg>
-                            <span>Последнее помещение</span>
-                          </button>
-                        </div>
-                        <img
-                          data-src="./images/card-place/2.jpg"
-                          src="./images/1x1.png"
-                          width="610"
-                          height="300"
-                          data-js-lazy
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__info">
-                        <div class="card__info-descr">
-                          <h3 class="cards__item-title">Art Residence</h3>
-                          <div class="metro-box">
-                            <svg class="icon icon--metro" style="fill: #11a75c">
-                              <use xlink:href="./images/sprite.svg#metro"></use>
-                            </svg>
-                            <span class="metro-name">Беляево</span>
-                            <div class="metro-time">
-                              <span>7 мин.</span>
-                              <svg class="icon icon--car">
-                                <use xlink:href="./images/sprite.svg#car"></use>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <span class="cards__item-price">от 75 000 ₽/мес</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="card-place" href="place-card.html">
-                      <div class="card__image-box">
-                        <div class="card__tags">
-                          <button class="btn btn--white btn--sm btn-tag" style="color: #1a1d21">
-                            <svg class="icon icon--tag-waiting" style="fill: currentColor">
-                              <use xlink:href="./images/sprite.svg#tag-waiting"></use>
-                            </svg>
-                            <span>В лист ожидания</span>
-                          </button>
-                        </div>
-                        <img
-                          data-src="./images/card-place/3.jpg"
-                          src="./images/1x1.png"
-                          width="610"
-                          height="300"
-                          data-js-lazy
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__info">
-                        <div class="card__info-descr">
-                          <h3 class="cards__item-title">Art Residence</h3>
-                          <div class="metro-box">
-                            <svg class="icon icon--metro" style="fill: #11a75c">
-                              <use xlink:href="./images/sprite.svg#metro"></use>
-                            </svg>
-                            <span class="metro-name">Беляево</span>
-                            <div class="metro-time">
-                              <span>7 мин.</span>
-                              <svg class="icon icon--car">
-                                <use xlink:href="./images/sprite.svg#car"></use>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <span class="cards__item-price">от 75 000 ₽/мес</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="card-place" href="place-card.html">
-                      <div class="card__image-box">
-                        <div class="card__tags">
-                          <button class="btn btn--white btn--sm btn-tag" style="color: #11a75c">
-                            <svg class="icon icon--tag-new" style="stroke: currentColor">
-                              <use xlink:href="./images/sprite.svg#tag-new"></use>
-                            </svg>
-                            <span>Новое</span>
-                          </button>
-                        </div>
-                        <img
-                          data-src="./images/card-place/4.jpg"
-                          src="./images/1x1.png"
-                          width="610"
-                          height="300"
-                          data-js-lazy
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__info">
-                        <div class="card__info-descr">
-                          <h3 class="cards__item-title">Art Residence</h3>
-                          <div class="metro-box">
-                            <svg class="icon icon--metro" style="fill: #11a75c">
-                              <use xlink:href="./images/sprite.svg#metro"></use>
-                            </svg>
-                            <span class="metro-name">Беляево</span>
-                            <div class="metro-time">
-                              <span>7 мин.</span>
-                              <svg class="icon icon--car">
-                                <use xlink:href="./images/sprite.svg#car"></use>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <span class="cards__item-price">от 75 000 ₽/мес</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="card-place" href="place-card.html">
-                      <div class="card__image-box">
-                        <div class="card__tags">
-                          <button class="btn btn--white btn--sm btn-tag" style="color: #ff4e4e">
-                            <svg class="icon icon--tag-left" style="stroke: currentColor">
-                              <use xlink:href="./images/sprite.svg#tag-left"></use>
-                            </svg>
-                            <span>Осталось 5 помещений</span>
-                          </button>
-                        </div>
-                        <img
-                          data-src="./images/card-place/1.jpg"
-                          src="./images/1x1.png"
-                          width="610"
-                          height="300"
-                          data-js-lazy
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__info">
-                        <div class="card__info-descr">
-                          <h3 class="cards__item-title">Art Residence</h3>
-                          <div class="metro-box">
-                            <svg class="icon icon--metro" style="fill: #11a75c">
-                              <use xlink:href="./images/sprite.svg#metro"></use>
-                            </svg>
-                            <span class="metro-name">Беляево</span>
-                            <div class="metro-time">
-                              <span>7 мин.</span>
-                              <svg class="icon icon--car">
-                                <use xlink:href="./images/sprite.svg#car"></use>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <span class="cards__item-price">от 75 000 ₽/мес</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
+                <div class="swiper-wrapper"><div class="swiper-slide">
+  <a class="card-place" href="place-card.html">
+    <div class="card__image-box">
+      <div class="card__tags">
+           
+        <button class="btn btn--white btn--sm btn-tag" style="color: #606977">
+          <svg class="icon icon--tag-passed" style="stroke: currentColor">
+            <use xlink:href="./images/sprite.svg#tag-passed"></use>
+          </svg>
+          <span>Сдано</span>
+        </button>
+         
+      </div>
+      <img data-src="./images/card-place/1.jpg" src="./images/1x1.png" width="610" height="300" data-js-lazy alt="" />
+    </div>
+    <div class="card__info">
+      <div class="card__info-descr">
+        <h3 class="cards__item-title">Art Residence</h3>
+        <div class="metro-box">
+          <svg class="icon icon--metro" style="fill: #11a75c">
+            <use xlink:href="./images/sprite.svg#metro"></use>
+          </svg>
+          <span class="metro-name">Беляево</span>
+          <div class="metro-time">
+            <span>7 мин.</span>
+            <svg class="icon icon--car">
+              <use xlink:href="./images/sprite.svg#car"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <span class="cards__item-price">от 75 000 ₽/мес</span>
+    </div>
+  </a>
+</div>
+<div class="swiper-slide">
+  <a class="card-place" href="place-card.html">
+    <div class="card__image-box">
+      <div class="card__tags">
+        
+        <button class="btn btn--white btn--sm btn-tag" style="color: #ff4e4e">
+          <svg class="icon icon--tag-last" style="stroke: currentColor">
+            <use xlink:href="./images/sprite.svg#tag-last"></use>
+          </svg>
+          <span>Последнее помещение</span>
+        </button>
+            
+      </div>
+      <img data-src="./images/card-place/2.jpg" src="./images/1x1.png" width="610" height="300" data-js-lazy alt="" />
+    </div>
+    <div class="card__info">
+      <div class="card__info-descr">
+        <h3 class="cards__item-title">Art Residence</h3>
+        <div class="metro-box">
+          <svg class="icon icon--metro" style="fill: #11a75c">
+            <use xlink:href="./images/sprite.svg#metro"></use>
+          </svg>
+          <span class="metro-name">Беляево</span>
+          <div class="metro-time">
+            <span>7 мин.</span>
+            <svg class="icon icon--car">
+              <use xlink:href="./images/sprite.svg#car"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <span class="cards__item-price">от 75 000 ₽/мес</span>
+    </div>
+  </a>
+</div>
+<div class="swiper-slide">
+  <a class="card-place" href="place-card.html">
+    <div class="card__image-box">
+      <div class="card__tags">
+         
+        <button class="btn btn--white btn--sm btn-tag" style="color: #1a1d21">
+          <svg class="icon icon--tag-waiting" style="fill: currentColor">
+            <use xlink:href="./images/sprite.svg#tag-waiting"></use>
+          </svg>
+          <span>В лист ожидания</span>
+        </button>
+           
+      </div>
+      <img data-src="./images/card-place/3.jpg" src="./images/1x1.png" width="610" height="300" data-js-lazy alt="" />
+    </div>
+    <div class="card__info">
+      <div class="card__info-descr">
+        <h3 class="cards__item-title">Art Residence</h3>
+        <div class="metro-box">
+          <svg class="icon icon--metro" style="fill: #11a75c">
+            <use xlink:href="./images/sprite.svg#metro"></use>
+          </svg>
+          <span class="metro-name">Беляево</span>
+          <div class="metro-time">
+            <span>7 мин.</span>
+            <svg class="icon icon--car">
+              <use xlink:href="./images/sprite.svg#car"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <span class="cards__item-price">от 75 000 ₽/мес</span>
+    </div>
+  </a>
+</div>
+<div class="swiper-slide">
+  <a class="card-place" href="place-card.html">
+    <div class="card__image-box">
+      <div class="card__tags">
+            
+        <button class="btn btn--white btn--sm btn-tag" style="color: #11a75c">
+          <svg class="icon icon--tag-new" style="stroke: currentColor">
+            <use xlink:href="./images/sprite.svg#tag-new"></use>
+          </svg>
+          <span>Новое</span>
+        </button>
+        
+      </div>
+      <img data-src="./images/card-place/4.jpg" src="./images/1x1.png" width="610" height="300" data-js-lazy alt="" />
+    </div>
+    <div class="card__info">
+      <div class="card__info-descr">
+        <h3 class="cards__item-title">Art Residence</h3>
+        <div class="metro-box">
+          <svg class="icon icon--metro" style="fill: #11a75c">
+            <use xlink:href="./images/sprite.svg#metro"></use>
+          </svg>
+          <span class="metro-name">Беляево</span>
+          <div class="metro-time">
+            <span>7 мин.</span>
+            <svg class="icon icon--car">
+              <use xlink:href="./images/sprite.svg#car"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <span class="cards__item-price">от 75 000 ₽/мес</span>
+    </div>
+  </a>
+</div>
+<div class="swiper-slide">
+  <a class="card-place" href="place-card.html">
+    <div class="card__image-box">
+      <div class="card__tags">
+          
+        <button class="btn btn--white btn--sm btn-tag" style="color: #ff4e4e">
+          <svg class="icon icon--tag-left" style="stroke: currentColor">
+            <use xlink:href="./images/sprite.svg#tag-left"></use>
+          </svg>
+          <span>Осталось 5 помещений</span>
+        </button>
+          
+      </div>
+      <img data-src="./images/card-place/1.jpg" src="./images/1x1.png" width="610" height="300" data-js-lazy alt="" />
+    </div>
+    <div class="card__info">
+      <div class="card__info-descr">
+        <h3 class="cards__item-title">Art Residence</h3>
+        <div class="metro-box">
+          <svg class="icon icon--metro" style="fill: #11a75c">
+            <use xlink:href="./images/sprite.svg#metro"></use>
+          </svg>
+          <span class="metro-name">Беляево</span>
+          <div class="metro-time">
+            <span>7 мин.</span>
+            <svg class="icon icon--car">
+              <use xlink:href="./images/sprite.svg#car"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <span class="cards__item-price">от 75 000 ₽/мес</span>
+    </div>
+  </a>
+</div>
+</div>
                 <div class="cards__bottom">
                   <a class="btn btn--black" href="catalog.html">Смотреть все объекты</a>
                   <div class="swiper-btns">
@@ -373,168 +350,147 @@
             <div class="cards__inner">
               <h2 class="h1">Скоро появится</h2>
               <div class="cards-place__swiper swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a class="card-place" href="place-card.html">
-                      <div class="card__image-box">
-                        <div class="card__tags">
-                          <button class="btn btn--white btn--sm btn-tag" style="color: #1a1d21">
-                            <svg class="icon icon--tag-waiting" style="fill: currentColor">
-                              <use xlink:href="./images/sprite.svg#tag-waiting"></use>
-                            </svg>
-                            <span>В лист ожидания</span>
-                          </button>
-                        </div>
-                        <img
-                          data-src="./images/card-place/1.jpg"
-                          src="./images/1x1.png"
-                          width="610"
-                          height="300"
-                          data-js-lazy
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__info">
-                        <div class="card__info-descr">
-                          <h3 class="cards__item-title">Art Residence</h3>
-                          <div class="metro-box">
-                            <svg class="icon icon--metro" style="fill: #11a75c">
-                              <use xlink:href="./images/sprite.svg#metro"></use>
-                            </svg>
-                            <span class="metro-name">Беляево</span>
-                            <div class="metro-time">
-                              <span>7 мин.</span>
-                              <svg class="icon icon--car">
-                                <use xlink:href="./images/sprite.svg#car"></use>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <span class="cards__item-price">от 75 000 ₽/мес</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="card-place" href="place-card.html">
-                      <div class="card__image-box">
-                        <div class="card__tags">
-                          <button class="btn btn--white btn--sm btn-tag" style="color: #1a1d21">
-                            <svg class="icon icon--tag-waiting" style="fill: currentColor">
-                              <use xlink:href="./images/sprite.svg#tag-waiting"></use>
-                            </svg>
-                            <span>В лист ожидания</span>
-                          </button>
-                        </div>
-                        <img
-                          data-src="./images/card-place/2.jpg"
-                          src="./images/1x1.png"
-                          width="610"
-                          height="300"
-                          data-js-lazy
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__info">
-                        <div class="card__info-descr">
-                          <h3 class="cards__item-title">Art Residence</h3>
-                          <div class="metro-box">
-                            <svg class="icon icon--metro" style="fill: #11a75c">
-                              <use xlink:href="./images/sprite.svg#metro"></use>
-                            </svg>
-                            <span class="metro-name">Беляево</span>
-                            <div class="metro-time">
-                              <span>7 мин.</span>
-                              <svg class="icon icon--car">
-                                <use xlink:href="./images/sprite.svg#car"></use>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <span class="cards__item-price">от 75 000 ₽/мес</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="card-place" href="place-card.html">
-                      <div class="card__image-box">
-                        <div class="card__tags">
-                          <button class="btn btn--white btn--sm btn-tag" style="color: #1a1d21">
-                            <svg class="icon icon--tag-waiting" style="fill: currentColor">
-                              <use xlink:href="./images/sprite.svg#tag-waiting"></use>
-                            </svg>
-                            <span>В лист ожидания</span>
-                          </button>
-                        </div>
-                        <img
-                          data-src="./images/card-place/3.jpg"
-                          src="./images/1x1.png"
-                          width="610"
-                          height="300"
-                          data-js-lazy
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__info">
-                        <div class="card__info-descr">
-                          <h3 class="cards__item-title">Art Residence</h3>
-                          <div class="metro-box">
-                            <svg class="icon icon--metro" style="fill: #11a75c">
-                              <use xlink:href="./images/sprite.svg#metro"></use>
-                            </svg>
-                            <span class="metro-name">Беляево</span>
-                            <div class="metro-time">
-                              <span>7 мин.</span>
-                              <svg class="icon icon--car">
-                                <use xlink:href="./images/sprite.svg#car"></use>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <span class="cards__item-price">от 75 000 ₽/мес</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="card-place" href="place-card.html">
-                      <div class="card__image-box">
-                        <div class="card__tags">
-                          <button class="btn btn--white btn--sm btn-tag" style="color: #1a1d21">
-                            <svg class="icon icon--tag-waiting" style="fill: currentColor">
-                              <use xlink:href="./images/sprite.svg#tag-waiting"></use>
-                            </svg>
-                            <span>В лист ожидания</span>
-                          </button>
-                        </div>
-                        <img
-                          data-src="./images/card-place/4.jpg"
-                          src="./images/1x1.png"
-                          width="610"
-                          height="300"
-                          data-js-lazy
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__info">
-                        <div class="card__info-descr">
-                          <h3 class="cards__item-title">Art Residence</h3>
-                          <div class="metro-box">
-                            <svg class="icon icon--metro" style="fill: #11a75c">
-                              <use xlink:href="./images/sprite.svg#metro"></use>
-                            </svg>
-                            <span class="metro-name">Беляево</span>
-                            <div class="metro-time">
-                              <span>7 мин.</span>
-                              <svg class="icon icon--car">
-                                <use xlink:href="./images/sprite.svg#car"></use>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <span class="cards__item-price">от 75 000 ₽/мес</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
+                <div class="swiper-wrapper"><div class="swiper-slide">
+  <a class="card-place" href="place-card.html">
+    <div class="card__image-box">
+      <div class="card__tags">
+         
+        <button class="btn btn--white btn--sm btn-tag" style="color: #1a1d21">
+          <svg class="icon icon--tag-waiting" style="fill: currentColor">
+            <use xlink:href="./images/sprite.svg#tag-waiting"></use>
+          </svg>
+          <span>В лист ожидания</span>
+        </button>
+           
+      </div>
+      <img data-src="./images/card-place/1.jpg" src="./images/1x1.png" width="610" height="300" data-js-lazy alt="" />
+    </div>
+    <div class="card__info">
+      <div class="card__info-descr">
+        <h3 class="cards__item-title">Art Residence</h3>
+        <div class="metro-box">
+          <svg class="icon icon--metro" style="fill: #11a75c">
+            <use xlink:href="./images/sprite.svg#metro"></use>
+          </svg>
+          <span class="metro-name">Беляево</span>
+          <div class="metro-time">
+            <span>7 мин.</span>
+            <svg class="icon icon--car">
+              <use xlink:href="./images/sprite.svg#car"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <span class="cards__item-price">от 75 000 ₽/мес</span>
+    </div>
+  </a>
+</div>
+<div class="swiper-slide">
+  <a class="card-place" href="place-card.html">
+    <div class="card__image-box">
+      <div class="card__tags">
+         
+        <button class="btn btn--white btn--sm btn-tag" style="color: #1a1d21">
+          <svg class="icon icon--tag-waiting" style="fill: currentColor">
+            <use xlink:href="./images/sprite.svg#tag-waiting"></use>
+          </svg>
+          <span>В лист ожидания</span>
+        </button>
+           
+      </div>
+      <img data-src="./images/card-place/2.jpg" src="./images/1x1.png" width="610" height="300" data-js-lazy alt="" />
+    </div>
+    <div class="card__info">
+      <div class="card__info-descr">
+        <h3 class="cards__item-title">Art Residence</h3>
+        <div class="metro-box">
+          <svg class="icon icon--metro" style="fill: #11a75c">
+            <use xlink:href="./images/sprite.svg#metro"></use>
+          </svg>
+          <span class="metro-name">Беляево</span>
+          <div class="metro-time">
+            <span>7 мин.</span>
+            <svg class="icon icon--car">
+              <use xlink:href="./images/sprite.svg#car"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <span class="cards__item-price">от 75 000 ₽/мес</span>
+    </div>
+  </a>
+</div>
+<div class="swiper-slide">
+  <a class="card-place" href="place-card.html">
+    <div class="card__image-box">
+      <div class="card__tags">
+         
+        <button class="btn btn--white btn--sm btn-tag" style="color: #1a1d21">
+          <svg class="icon icon--tag-waiting" style="fill: currentColor">
+            <use xlink:href="./images/sprite.svg#tag-waiting"></use>
+          </svg>
+          <span>В лист ожидания</span>
+        </button>
+           
+      </div>
+      <img data-src="./images/card-place/3.jpg" src="./images/1x1.png" width="610" height="300" data-js-lazy alt="" />
+    </div>
+    <div class="card__info">
+      <div class="card__info-descr">
+        <h3 class="cards__item-title">Art Residence</h3>
+        <div class="metro-box">
+          <svg class="icon icon--metro" style="fill: #11a75c">
+            <use xlink:href="./images/sprite.svg#metro"></use>
+          </svg>
+          <span class="metro-name">Беляево</span>
+          <div class="metro-time">
+            <span>7 мин.</span>
+            <svg class="icon icon--car">
+              <use xlink:href="./images/sprite.svg#car"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <span class="cards__item-price">от 75 000 ₽/мес</span>
+    </div>
+  </a>
+</div>
+<div class="swiper-slide">
+  <a class="card-place" href="place-card.html">
+    <div class="card__image-box">
+      <div class="card__tags">
+         
+        <button class="btn btn--white btn--sm btn-tag" style="color: #1a1d21">
+          <svg class="icon icon--tag-waiting" style="fill: currentColor">
+            <use xlink:href="./images/sprite.svg#tag-waiting"></use>
+          </svg>
+          <span>В лист ожидания</span>
+        </button>
+           
+      </div>
+      <img data-src="./images/card-place/4.jpg" src="./images/1x1.png" width="610" height="300" data-js-lazy alt="" />
+    </div>
+    <div class="card__info">
+      <div class="card__info-descr">
+        <h3 class="cards__item-title">Art Residence</h3>
+        <div class="metro-box">
+          <svg class="icon icon--metro" style="fill: #11a75c">
+            <use xlink:href="./images/sprite.svg#metro"></use>
+          </svg>
+          <span class="metro-name">Беляево</span>
+          <div class="metro-time">
+            <span>7 мин.</span>
+            <svg class="icon icon--car">
+              <use xlink:href="./images/sprite.svg#car"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <span class="cards__item-price">от 75 000 ₽/мес</span>
+    </div>
+  </a>
+</div>
+</div>
                 <div class="cards__bottom">
                   <a class="btn btn--black" href="catalog.html">Смотреть все объекты</a>
                   <div class="swiper-btns">
@@ -610,142 +566,133 @@
             <div class="cards__inner">
               <h2 class="h1">Новости и статьи</h2>
               <div class="cards__swiper swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a class="card-news" href="news-card.html">
-                      <div class="card__image-box">
-                        <img
-                          data-src="./images/card-news/1.jpg"
-                          src="./images/1x1.png"
-                          width="610"
-                          height="300"
-                          data-js-lazy
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__info">
-                        <span class="cards__item-date">25 сентября 2025</span>
-                        <div class="card__info-descr">
-                          <h3 class="cards__item-title">Новый бизнес-центр Art Residence открыт для аренды</h3>
-                          <p class="cards__item-descr">
-                            Современные офисные помещения с панорамными окнами и парковкой уже доступны для аренды.
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="card-news" href="news-card.html">
-                      <div class="card__image-box">
-                        <img
-                          data-src="./images/card-news/2.jpg"
-                          src="./images/1x1.png"
-                          width="610"
-                          height="300"
-                          data-js-lazy
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__info">
-                        <span class="cards__item-date">25 сентября 2025</span>
-                        <div class="card__info-descr">
-                          <h3 class="cards__item-title">Снижение ставок на складские помещения</h3>
-                          <p class="cards__item-descr">До конца месяца действует специальное предложение на аренду складов.</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="card-news" href="news-card.html">
-                      <div class="card__image-box">
-                        <img
-                          data-src="./images/card-news/3.jpg"
-                          src="./images/1x1.png"
-                          width="610"
-                          height="300"
-                          data-js-lazy
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__info">
-                        <span class="cards__item-date">25 сентября 2025</span>
-                        <div class="card__info-descr">
-                          <h3 class="cards__item-title">Популярные объекты в центре города</h3>
-                          <p class="cards__item-descr">
-                            Спрос на коммерческую недвижимость продолжает расти. Мы подготовили обзор самых востребованных офисов.
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="card-news" href="news-card.html">
-                      <div class="card__image-box">
-                        <img
-                          data-src="./images/card-news/1.jpg"
-                          src="./images/1x1.png"
-                          width="610"
-                          height="300"
-                          data-js-lazy
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__info">
-                        <span class="cards__item-date">25 сентября 2025</span>
-                        <div class="card__info-descr">
-                          <h3 class="cards__item-title">Новый бизнес-центр Art Residence открыт для аренды</h3>
-                          <p class="cards__item-descr">
-                            Современные офисные помещения с панорамными окнами и парковкой уже доступны для аренды.
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="card-news" href="news-card.html">
-                      <div class="card__image-box">
-                        <img
-                          data-src="./images/card-news/2.jpg"
-                          src="./images/1x1.png"
-                          width="610"
-                          height="300"
-                          data-js-lazy
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__info">
-                        <span class="cards__item-date">25 сентября 2025</span>
-                        <div class="card__info-descr">
-                          <h3 class="cards__item-title">Снижение ставок на складские помещения</h3>
-                          <p class="cards__item-descr">До конца месяца действует специальное предложение на аренду складов.</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a class="card-news" href="news-card.html">
-                      <div class="card__image-box">
-                        <img
-                          data-src="./images/card-news/3.jpg"
-                          src="./images/1x1.png"
-                          width="610"
-                          height="300"
-                          data-js-lazy
-                          alt=""
-                        />
-                      </div>
-                      <div class="card__info">
-                        <span class="cards__item-date">25 сентября 2025</span>
-                        <div class="card__info-descr">
-                          <h3 class="cards__item-title">Популярные объекты в центре города</h3>
-                          <p class="cards__item-descr">
-                            Спрос на коммерческую недвижимость продолжает расти. Мы подготовили обзор самых востребованных офисов.
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
+                <div class="swiper-wrapper"><div class="swiper-slide">
+  <a class="card-news" href="news-card.html">
+    <div class="card__image-box">
+      <img
+        data-src="./images/card-news/1.jpg"
+        src="./images/1x1.png"
+        width="610"
+        height="300"
+        data-js-lazy
+        alt=""
+      />
+    </div>
+    <div class="card__info">
+      <span class="cards__item-date">25 сентября 2025</span>
+      <div class="card__info-descr">
+        <h3 class="cards__item-title">Новый бизнес-центр Art Residence открыт для аренды</h3>
+        <p class="cards__item-descr">Современные офисные помещения с панорамными окнами и парковкой уже доступны для аренды. </p>
+      </div>
+    </div>
+  </a>
+</div>
+<div class="swiper-slide">
+  <a class="card-news" href="news-card.html">
+    <div class="card__image-box">
+      <img
+        data-src="./images/card-news/2.jpg"
+        src="./images/1x1.png"
+        width="610"
+        height="300"
+        data-js-lazy
+        alt=""
+      />
+    </div>
+    <div class="card__info">
+      <span class="cards__item-date">25 сентября 2025</span>
+      <div class="card__info-descr">
+        <h3 class="cards__item-title">Снижение ставок на складские помещения</h3>
+        <p class="cards__item-descr">До конца месяца действует специальное предложение на аренду складов. </p>
+      </div>
+    </div>
+  </a>
+</div>
+<div class="swiper-slide">
+  <a class="card-news" href="news-card.html">
+    <div class="card__image-box">
+      <img
+        data-src="./images/card-news/3.jpg"
+        src="./images/1x1.png"
+        width="610"
+        height="300"
+        data-js-lazy
+        alt=""
+      />
+    </div>
+    <div class="card__info">
+      <span class="cards__item-date">25 сентября 2025</span>
+      <div class="card__info-descr">
+        <h3 class="cards__item-title">Популярные объекты в центре города</h3>
+        <p class="cards__item-descr">Спрос на коммерческую недвижимость продолжает расти. Мы подготовили обзор самых востребованных офисов.</p>
+      </div>
+    </div>
+  </a>
+</div>
+<div class="swiper-slide">
+  <a class="card-news" href="news-card.html">
+    <div class="card__image-box">
+      <img
+        data-src="./images/card-news/1.jpg"
+        src="./images/1x1.png"
+        width="610"
+        height="300"
+        data-js-lazy
+        alt=""
+      />
+    </div>
+    <div class="card__info">
+      <span class="cards__item-date">25 сентября 2025</span>
+      <div class="card__info-descr">
+        <h3 class="cards__item-title">Новый бизнес-центр Art Residence открыт для аренды</h3>
+        <p class="cards__item-descr">Современные офисные помещения с панорамными окнами и парковкой уже доступны для аренды. </p>
+      </div>
+    </div>
+  </a>
+</div>
+<div class="swiper-slide">
+  <a class="card-news" href="news-card.html">
+    <div class="card__image-box">
+      <img
+        data-src="./images/card-news/2.jpg"
+        src="./images/1x1.png"
+        width="610"
+        height="300"
+        data-js-lazy
+        alt=""
+      />
+    </div>
+    <div class="card__info">
+      <span class="cards__item-date">25 сентября 2025</span>
+      <div class="card__info-descr">
+        <h3 class="cards__item-title">Снижение ставок на складские помещения</h3>
+        <p class="cards__item-descr">До конца месяца действует специальное предложение на аренду складов. </p>
+      </div>
+    </div>
+  </a>
+</div>
+<div class="swiper-slide">
+  <a class="card-news" href="news-card.html">
+    <div class="card__image-box">
+      <img
+        data-src="./images/card-news/3.jpg"
+        src="./images/1x1.png"
+        width="610"
+        height="300"
+        data-js-lazy
+        alt=""
+      />
+    </div>
+    <div class="card__info">
+      <span class="cards__item-date">25 сентября 2025</span>
+      <div class="card__info-descr">
+        <h3 class="cards__item-title">Популярные объекты в центре города</h3>
+        <p class="cards__item-descr">Спрос на коммерческую недвижимость продолжает расти. Мы подготовили обзор самых востребованных офисов.</p>
+      </div>
+    </div>
+  </a>
+</div>
+</div>
                 <div class="cards__bottom">
                   <a class="btn btn--black" href="news.html">Смотреть все новости</a>
                   <div class="swiper-btns">
@@ -767,371 +714,507 @@
         </section>
       </main>
       <footer class="footer">
-        <h2 class="visually-hidden">footer</h2>
-        <div class="container">
-          <div class="footer__inner">
-            <a class="logo" href="/">
-              <img src="./images/logo-big.svg" alt="logo-big" />
-            </a>
-            <div class="footer__descr">
-              <a href="privacy.html">Политика конфиденциальности и пользовательское соглашение</a>
-              <span>Все права принадлежат ООО «ФОСУРЕ» © 2025</span>
-            </div>
-            <div class="footer__bottom">
-              <div class="footer__link-box">
-                <span>Сайт разработан</span>
-                <a href="applikaciya.com" target="_blank">
-                  APPLIKACIYA.COM
-                  <svg class="icon icon--open">
-                    <use xlink:href="./images/sprite.svg#open"></use>
-                  </svg>
-                </a>
+  <h2 class="visually-hidden">footer</h2>
+  <div class="container">
+    <div class="footer__inner">
+      <a class="logo" href="/">
+        <img src="./images/logo-big.svg" alt="logo-big" />
+      </a>
+      <div class="footer__descr">
+        <a href="privacy.html">Политика конфиденциальности и пользовательское соглашение</a>
+        <span>Все права принадлежат ООО «ФОСУРЕ» © 2025</span>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__link-box">
+          <span>Сайт разработан</span>
+          <a href="applikaciya.com" target="_blank">
+            APPLIKACIYA.COM
+            <svg class="icon icon--open">
+              <use xlink:href="./images/sprite.svg#open"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="footer__link-box">
+          <span>Хостинг</span>
+          <a href="focloud.ru" target="_blank">
+            FOCLOUD.RU
+            <svg class="icon icon--open">
+              <use xlink:href="./images/sprite.svg#open"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="contact-box">
+        <div class="contact-box__item">
+          <div class="icon-box">
+            <svg class="icon icon--phone-fill">
+              <use xlink:href="./images/sprite.svg#phone-fill"></use>
+            </svg>
+          </div>
+          <a class="btn--link" href="tel:+74959677557">+7 495 967-75-57</a>
+        </div>
+        <div class="contact-box__item">
+          <div class="icon-box">
+            <svg class="icon icon--mail-fill">
+              <use xlink:href="./images/sprite.svg#mail-fill"></use>
+            </svg>
+          </div>
+          <a class="btn--link" href="mailto:manager@fosure.ru">manager@fosure.ru</a>
+        </div>
+        <div class="contact-box__item">
+          <div class="icon-box">
+            <svg class="icon icon--telegram">
+              <use xlink:href="./images/sprite.svg#telegram"></use>
+            </svg>
+          </div>
+          <a class="btn--link" href="#!">Telegram</a>
+        </div>
+        <div class="contact-box__item">
+          <div class="icon-box">
+            <svg class="icon icon--whatsapp">
+              <use xlink:href="./images/sprite.svg#whatsapp"></use>
+            </svg>
+          </div>
+          <a class="btn--link" href="#!">WhatsApp</a>
+        </div>
+        <div class="contact-box__item">
+          <div class="icon-box">
+            <svg class="icon icon--map-point">
+              <use xlink:href="./images/sprite.svg#map-point"></use>
+            </svg>
+          </div>
+          <span>г. Москва, ул. Свободы, д. 95, корп. 2</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="visually-hidden">
+  <button id="open-form-success" data-js-modal-open data-path="modal-form-success"></button>
+  <button id="open-form-failed" data-js-modal-open data-path="modal-form-failed"></button>
+  <button id="open-form-cookie" data-js-modal-open data-path="modal-cookie"></button>
+</div>
+
+    </div>
+    <div class="modals">
+  <div
+    class="modal-overlay"
+    data-js-modal-overlay
+  >
+    <div
+      class="modal modal__card-images"
+      data-target="modal-card-images"
+    >
+      <div class="modal__content">
+        <button
+          class="btn-close"
+          data-js-modal-close
+        >
+          <svg class="icon icon--close">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__body">
+          <div class="card__images-swiper-wrapper">
+            <div class="card__images-swiper swiper">
+              <button class="btn btn--white btn--icon-sm swiper-button-prev card-swiper-btn-prev">
+                <svg class="icon icon--arrow-left">
+                  <use xlink:href="./images/sprite.svg#arrow-left"></use>
+                </svg>
+              </button>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card__images-slide">
+                    <img
+                      data-src="./images/cards/1.jpg"
+                      src="./images/1x1.png"
+                      width="1340"
+                      height="856"
+                      data-js-lazy
+                      alt="card"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__images-slide">
+                    <img
+                      data-src="./images/cards/2.jpg"
+                      src="./images/1x1.png"
+                      width="1340"
+                      height="856"
+                      data-js-lazy
+                      alt="card"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__images-slide">
+                    <img
+                      data-src="./images/cards/3.jpg"
+                      src="./images/1x1.png"
+                      width="1340"
+                      height="856"
+                      data-js-lazy
+                      alt="card"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__images-slide">
+                    <img
+                      data-src="./images/cards/4.jpg"
+                      src="./images/1x1.png"
+                      width="1340"
+                      height="856"
+                      data-js-lazy
+                      alt="card"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__images-slide">
+                    <img
+                      data-src="./images/cards/5.jpg"
+                      src="./images/1x1.png"
+                      width="1340"
+                      height="856"
+                      data-js-lazy
+                      alt="card"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__images-slide">
+                    <img
+                      data-src="./images/cards/6.jpg"
+                      src="./images/1x1.png"
+                      width="1340"
+                      height="856"
+                      data-js-lazy
+                      alt="card"
+                    />
+                  </div>
+                </div>
               </div>
-              <div class="footer__link-box">
-                <span>Хостинг</span>
-                <a href="focloud.ru" target="_blank">
-                  FOCLOUD.RU
-                  <svg class="icon icon--open">
-                    <use xlink:href="./images/sprite.svg#open"></use>
-                  </svg>
-                </a>
+              <button class="btn btn--white btn--icon-sm swiper-button-next card-swiper-btn-next">
+                <svg class="icon icon--arrow-right">
+                  <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="card-swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal modal__object"
+      data-target="modal-object"
+    >
+      <div class="modal__content">
+        <button
+          class="btn-close"
+          data-js-modal-close
+        >
+          <svg class="icon icon--close">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__body">
+          <div class="form-section__info">
+            <h2 class="h3">Предложить коммерческий&nbsp;объект</h2>
+            <span class="subtitle"> Мы ищем недооценённые коммерческие помещения под выкуп, ремонт и сдачу в аренду </span>
+          </div>
+          <form
+            action="#!"
+            class="form"
+          >
+            <div class="form__inputs">
+              <div class="input-box">
+                <input
+                  class="_req"
+                  type="text"
+                  name="Адрес"
+                  placeholder="Адрес"
+                  autocomplete="off"
+                />
+                <span class="input-info">
+                  <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
+                </span>
+              </div>
+              <div class="input-number-box input-box">
+                <input
+                  class="input-number _req"
+                  type="text"
+                  name="Площадь"
+                  placeholder="Площадь"
+                  autocomplete="off"
+                />
+                <span class="input-info">
+                  <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
+                </span>
+                <div class="input-number__controls">
+                  <button
+                    type="button"
+                    class="input-number__btn plus"
+                  >
+                    +
+                  </button>
+                  <button
+                    type="button"
+                    class="input-number__btn minus"
+                  >
+                    -
+                  </button>
+                </div>
+              </div>
+              <div class="input-box">
+                <input
+                  class="_req"
+                  type="text"
+                  name="Имя"
+                  placeholder="Имя"
+                  autocomplete="off"
+                />
+                <span class="input-info">
+                  <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
+                </span>
+              </div>
+              <div class="input-box">
+                <input
+                  class="_req _phone"
+                  type="tel"
+                  name="Телефон"
+                  placeholder="+7 (−−−) −−− −− −−"
+                  autocomplete="off"
+                />
+                <span class="input-info">
+                  <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
+                </span>
               </div>
             </div>
-            <div class="contact-box">
-              <div class="contact-box__item">
+            <button
+              class="btn btn--black"
+              type="submit"
+            >
+              Отправить
+            </button>
+          </form>
+          <div class="form-section__bottom">
+            <span class="form__privacy"
+              >Отправляя данные, вы соглашаетесь с
+              <a href="privacy.html">Политикой конфиденциальности и условиями Пользовательского соглашения</a></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal modal__consultation"
+      data-target="modal-consultation"
+    >
+      <div class="modal__content">
+        <button
+          class="btn-close"
+          data-js-modal-close
+        >
+          <svg class="icon icon--close">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__body">
+          <div class="form-section__info">
+            <h2 class="h3">Связаться с нами</h2>
+            <span class="subtitle"> Заполните короткую форму, и мы перезвоним вам в ближайшее рабочее время </span>
+          </div>
+          <form
+            action="#!"
+            class="form"
+          >
+            <div class="form__inputs">
+              <div class="input-box">
+                <input
+                  class="_req"
+                  type="text"
+                  name="Имя"
+                  placeholder="Имя"
+                  autocomplete="off"
+                />
+                <span class="input-info">
+                  <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
+                </span>
+              </div>
+              <div class="input-box">
+                <input
+                  class="_req _phone"
+                  type="tel"
+                  name="Телефон"
+                  placeholder="+7 (−−−) −−− −− −−"
+                  autocomplete="off"
+                />
+                <span class="input-info">
+                  <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
+                </span>
+              </div>
+            </div>
+            <button
+              class="btn btn--black"
+              type="submit"
+            >
+              Отправить
+            </button>
+          </form>
+          <div class="form-section__bottom">
+            <span class="form__privacy">
+              Отправляя данные, вы соглашаетесь с
+              <a href="privacy.html">Политикой конфиденциальности и условиями Пользовательского соглашения</a>
+            </span>
+          </div>
+          <div class="modal__contacts">
+            <div class="modal__contacts-title"><span>Или свяжитесь напрямую</span></div>
+            <div class="modal__contacts-items">
+              <a
+                class="modal__contacts-item"
+                href="tel:+79251302525"
+              >
                 <div class="icon-box">
                   <svg class="icon icon--phone-fill">
                     <use xlink:href="./images/sprite.svg#phone-fill"></use>
                   </svg>
                 </div>
-                <a class="btn--link" href="tel:+74959677557">+7 495 967-75-57</a>
-              </div>
-              <div class="contact-box__item">
+                <span class="btn--link">+7 925 130-25-25</span>
+              </a>
+              <a
+                class="modal__contacts-item"
+                href="mailto:manager@fosure.ru"
+              >
                 <div class="icon-box">
                   <svg class="icon icon--mail-fill">
                     <use xlink:href="./images/sprite.svg#mail-fill"></use>
                   </svg>
                 </div>
-                <a class="btn--link" href="mailto:manager@fosure.ru">manager@fosure.ru</a>
-              </div>
-              <div class="contact-box__item">
-                <div class="icon-box">
-                  <svg class="icon icon--telegram">
-                    <use xlink:href="./images/sprite.svg#telegram"></use>
-                  </svg>
-                </div>
-                <a class="btn--link" href="#!">Telegram</a>
-              </div>
-              <div class="contact-box__item">
-                <div class="icon-box">
-                  <svg class="icon icon--whatsapp">
-                    <use xlink:href="./images/sprite.svg#whatsapp"></use>
-                  </svg>
-                </div>
-                <a class="btn--link" href="#!">WhatsApp</a>
-              </div>
-              <div class="contact-box__item">
-                <div class="icon-box">
-                  <svg class="icon icon--map-point">
-                    <use xlink:href="./images/sprite.svg#map-point"></use>
-                  </svg>
-                </div>
-                <span>г. Москва, ул. Свободы, д. 95, корп. 2</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <div class="visually-hidden">
-        <button id="open-form-success" data-js-modal-open data-path="modal-form-success"></button>
-        <button id="open-form-failed" data-js-modal-open data-path="modal-form-failed"></button>
-        <button id="open-form-cookie" data-js-modal-open data-path="modal-cookie"></button>
-      </div>
-    </div>
-    <div class="modals">
-      <div class="modal-overlay" data-js-modal-overlay>
-        <div class="modal modal__card-images" data-target="modal-card-images">
-          <div class="modal__content">
-            <button class="btn-close" data-js-modal-close>
-              <svg class="icon icon--close">
-                <use xlink:href="./images/sprite.svg#close"></use>
-              </svg>
-            </button>
-            <div class="modal__body">
-              <div class="card__images-swiper-wrapper">
-                <div class="card__images-swiper swiper">
-                  <button class="btn btn--white btn--icon-sm swiper-button-prev card-swiper-btn-prev">
-                    <svg class="icon icon--arrow-left">
-                      <use xlink:href="./images/sprite.svg#arrow-left"></use>
-                    </svg>
-                  </button>
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="card__images-slide">
-                        <img
-                          data-src="./images/cards/1.jpg"
-                          src="./images/1x1.png"
-                          width="1340"
-                          height="856"
-                          data-js-lazy
-                          alt="card"
-                        />
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="card__images-slide">
-                        <img
-                          data-src="./images/cards/2.jpg"
-                          src="./images/1x1.png"
-                          width="1340"
-                          height="856"
-                          data-js-lazy
-                          alt="card"
-                        />
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="card__images-slide">
-                        <img
-                          data-src="./images/cards/3.jpg"
-                          src="./images/1x1.png"
-                          width="1340"
-                          height="856"
-                          data-js-lazy
-                          alt="card"
-                        />
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="card__images-slide">
-                        <img
-                          data-src="./images/cards/4.jpg"
-                          src="./images/1x1.png"
-                          width="1340"
-                          height="856"
-                          data-js-lazy
-                          alt="card"
-                        />
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="card__images-slide">
-                        <img
-                          data-src="./images/cards/5.jpg"
-                          src="./images/1x1.png"
-                          width="1340"
-                          height="856"
-                          data-js-lazy
-                          alt="card"
-                        />
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="card__images-slide">
-                        <img
-                          data-src="./images/cards/6.jpg"
-                          src="./images/1x1.png"
-                          width="1340"
-                          height="856"
-                          data-js-lazy
-                          alt="card"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <button class="btn btn--white btn--icon-sm swiper-button-next card-swiper-btn-next">
-                    <svg class="icon icon--arrow-right">
-                      <use xlink:href="./images/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </button>
-                </div>
-                <div class="card-swiper-pagination"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal modal__object" data-target="modal-object">
-          <div class="modal__content">
-            <button class="btn-close" data-js-modal-close>
-              <svg class="icon icon--close">
-                <use xlink:href="./images/sprite.svg#close"></use>
-              </svg>
-            </button>
-            <div class="modal__body">
-              <div class="form-section__info">
-                <h2 class="h3">Предложить коммерческий&nbsp;объект</h2>
-                <span class="subtitle"> Мы ищем недооценённые коммерческие помещения под выкуп, ремонт и сдачу в аренду </span>
-              </div>
-              <form action="#!" class="form">
-                <div class="form__inputs">
-                  <div class="input-box">
-                    <input class="_req" type="text" name="Адрес" placeholder="Адрес" autocomplete="off" />
-                    <span class="input-info">
-                      <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
-                    </span>
-                  </div>
-                  <div class="input-number-box input-box">
-                    <input class="input-number _req" type="text" name="Площадь" placeholder="Площадь" autocomplete="off" />
-                    <span class="input-info">
-                      <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
-                    </span>
-                    <div class="input-number__controls">
-                      <button type="button" class="input-number__btn plus">+</button>
-                      <button type="button" class="input-number__btn minus">-</button>
-                    </div>
-                  </div>
-                  <div class="input-box">
-                    <input class="_req" type="text" name="Имя" placeholder="Имя" autocomplete="off" />
-                    <span class="input-info">
-                      <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
-                    </span>
-                  </div>
-                  <div class="input-box">
-                    <input class="_req _phone" type="tel" name="Телефон" placeholder="+7 (−−−) −−− −− −−" autocomplete="off" />
-                    <span class="input-info">
-                      <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
-                    </span>
-                  </div>
-                </div>
-                <button class="btn btn--black" type="submit">Отправить</button>
-              </form>
-              <div class="form-section__bottom">
-                <span class="form__privacy"
-                  >Отправляя данные, вы соглашаетесь с
-                  <a href="privacy.html">Политикой конфиденциальности и условиями Пользовательского соглашения</a></span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal modal__consultation" data-target="modal-consultation">
-          <div class="modal__content">
-            <button class="btn-close" data-js-modal-close>
-              <svg class="icon icon--close">
-                <use xlink:href="./images/sprite.svg#close"></use>
-              </svg>
-            </button>
-            <div class="modal__body">
-              <div class="form-section__info">
-                <h2 class="h3">Связаться с нами</h2>
-                <span class="subtitle"> Заполните короткую форму, и мы перезвоним вам в ближайшее рабочее время </span>
-              </div>
-              <form action="#!" class="form">
-                <div class="form__inputs">
-                  <div class="input-box">
-                    <input class="_req" type="text" name="Имя" placeholder="Имя" autocomplete="off" />
-                    <span class="input-info">
-                      <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
-                    </span>
-                  </div>
-                  <div class="input-box">
-                    <input class="_req _phone" type="tel" name="Телефон" placeholder="+7 (−−−) −−− −− −−" autocomplete="off" />
-                    <span class="input-info">
-                      <svg class="icon icon--info"><use xlink:href="./images/sprite.svg#info"></use></svg>
-                    </span>
-                  </div>
-                </div>
-                <button class="btn btn--black" type="submit">Отправить</button>
-              </form>
-              <div class="form-section__bottom">
-                <span class="form__privacy">
-                  Отправляя данные, вы соглашаетесь с
-                  <a href="privacy.html">Политикой конфиденциальности и условиями Пользовательского соглашения</a>
-                </span>
-              </div>
-              <div class="modal__contacts">
-                <div class="modal__contacts-title"><span>Или свяжитесь напрямую</span></div>
-                <div class="modal__contacts-items">
-                  <a class="modal__contacts-item" href="tel:+79251302525">
-                    <div class="icon-box">
-                      <svg class="icon icon--phone-fill">
-                        <use xlink:href="./images/sprite.svg#phone-fill"></use>
-                      </svg>
-                    </div>
-                    <span class="btn--link">+7 925 130-25-25</span>
-                  </a>
-                  <a class="modal__contacts-item" href="mailto:manager@fosure.ru">
-                    <div class="icon-box">
-                      <svg class="icon icon--mail-fill">
-                        <use xlink:href="./images/sprite.svg#mail-fill"></use>
-                      </svg>
-                    </div>
-                    <span class="btn--link">manager@fosure.ru</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal modal__form-send" data-target="modal-form-success">
-          <div class="modal__content">
-            <button class="btn-close" data-js-modal-close>
-              <svg class="icon icon--close">
-                <use xlink:href="./images/sprite.svg#close"></use>
-              </svg>
-            </button>
-            <div class="modal__body">
-              <svg class="icon icon--success">
-                <use xlink:href="./images/sprite.svg#success"></use>
-              </svg>
-              <div class="modal__form-info">
-                <h2 class="modal__form-title">Спасибо! <br />Ваша заявка принята</h2>
-                <span class="modal__form-subtitle">Наш менеджер свяжется с вами в течение часа (в&nbsp;рабочее&nbsp;время)</span>
-              </div>
-              <button class="btn btn--black" data-js-modal-close>Закрыть</button>
-            </div>
-          </div>
-        </div>
-        <div class="modal modal__form-send" data-target="modal-form-failed">
-          <div class="modal__content">
-            <button class="btn-close" data-js-modal-close>
-              <svg class="icon icon--close">
-                <use xlink:href="./images/sprite.svg#close"></use>
-              </svg>
-            </button>
-            <div class="modal__body">
-              <svg class="icon icon--failed">
-                <use xlink:href="./images/sprite.svg#failed"></use>
-              </svg>
-              <div class="modal__form-info">
-                <h2 class="modal__form-title">Не удалось отправить</h2>
-                <span class="modal__form-subtitle"
-                  >К сожалению, заявку не удалось отправить. Попробуйте ещё раз или напишите нам напрямую:</span
-                >
-                <div class="row modal__form-subtitle">
-                  <a class="btn--link" href="tel:+79251302525">+7 925 130-25-25</a>
-                  <span>или</span>
-                  <a class="btn--link" href="mailto:manager@fosure.ru">manager@fosure.ru</a>
-                </div>
-              </div>
-              <button class="btn btn--black" data-js-modal-close>Попробовать снова</button>
-            </div>
-          </div>
-        </div>
-        <div class="modal modal__cookie" data-target="modal-cookie" id="warning-plate">
-          <div class="modal__content">
-            <div class="modal__body">
-              <img class="cookie-img" src="./images/cookie.png" alt="cookie" />
-              <p>
-                На сайте используются куки сетевых служб Яндекс и Google. Продолжая просмотр сайта, вы выражаете свое согласие
-                <a href="#!">с Политикой хранения и обработки файлов cookie</a>, разработанной в соответствии с требованиями
-                152-ФЗ "О персональных данных".
-              </p>
-              <button class="btn btn--black" data-js-modal-close id="warning-btn" onclick="checkCookies()">Хорошо</button>
+                <span class="btn--link">manager@fosure.ru</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
-    <script src="./libs/swiper/swiper-bundle.min.js"></script>
-    <script src="./libs/inputmask/inputmask.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script>
-      function checkCookies() {
-        document.cookie = "COOKIE_ACCEPT=1;path='/';expires:" + new Date(new Date().getTime() + 86400e3 * 365).toUTCString();
-        document.getElementById('warning-plate').remove();
-      }
-    </script>
+    <div
+      class="modal modal__form-send"
+      data-target="modal-form-success"
+    >
+      <div class="modal__content">
+        <button
+          class="btn-close"
+          data-js-modal-close
+        >
+          <svg class="icon icon--close">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__body">
+          <svg class="icon icon--success">
+            <use xlink:href="./images/sprite.svg#success"></use>
+          </svg>
+          <div class="modal__form-info">
+            <h2 class="modal__form-title">Спасибо! <br />Ваша заявка принята</h2>
+            <span class="modal__form-subtitle">Наш менеджер свяжется с вами в течение часа (в&nbsp;рабочее&nbsp;время)</span>
+          </div>
+          <button
+            class="btn btn--black"
+            data-js-modal-close
+          >
+            Закрыть
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal modal__form-send"
+      data-target="modal-form-failed"
+    >
+      <div class="modal__content">
+        <button
+          class="btn-close"
+          data-js-modal-close
+        >
+          <svg class="icon icon--close">
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__body">
+          <svg class="icon icon--failed">
+            <use xlink:href="./images/sprite.svg#failed"></use>
+          </svg>
+          <div class="modal__form-info">
+            <h2 class="modal__form-title">Не удалось отправить</h2>
+            <span class="modal__form-subtitle"
+              >К сожалению, заявку не удалось отправить. Попробуйте ещё раз или напишите нам напрямую:</span
+            >
+            <div class="row modal__form-subtitle">
+              <a
+                class="btn--link"
+                href="tel:+79251302525"
+                >+7 925 130-25-25</a
+              >
+              <span>или</span>
+              <a
+                class="btn--link"
+                href="mailto:manager@fosure.ru"
+                >manager@fosure.ru</a
+              >
+            </div>
+          </div>
+          <button
+            class="btn btn--black"
+            data-js-modal-close
+          >
+            Попробовать снова
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal modal__cookie"
+      data-target="modal-cookie"
+      id="warning-plate"
+    >
+      <div class="modal__content">
+        <div class="modal__body">
+          <img
+            class="cookie-img"
+            src="./images/cookie.png"
+            alt="cookie"
+          />
+          <p>
+            На сайте используются куки сетевых служб Яндекс и Google. Продолжая просмотр сайта, вы выражаете свое согласие
+            <a href="#!">с Политикой хранения и обработки файлов cookie</a>, разработанной в соответствии с требованиями 152-ФЗ "О
+            персональных данных".
+          </p>
+          <button
+            class="btn btn--black"
+            data-js-modal-close
+            id="warning-btn"
+            onclick="checkCookies()"
+          >
+            Хорошо
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+<script src="./libs/swiper/swiper-bundle.min.js"></script>
+<script src="./libs/inputmask/inputmask.min.js"></script>
+<script src="./js/main.js"></script>
+<script>
+  function checkCookies() {
+    document.cookie = "COOKIE_ACCEPT=1;path='/';expires:" + new Date(new Date().getTime() + 86400e3 * 365).toUTCString();
+    document.getElementById('warning-plate').remove();
+  }
+</script>
+
   </body>
 </html>
