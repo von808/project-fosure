@@ -250,13 +250,13 @@
   <defs>
     <linearGradient id="paint0_linear_874_3932" x1="0" y1="0" x2="100%" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="-2" stop-color="#dfe0e1">
-        <animate dur="2s" attributeName="offset" fill="freeze" from="-2" to="1" repeatCount="indefinite" />
+        <animate dur="4s" attributeName="offset" fill="freeze" from="-2" to="1" repeatCount="indefinite" />
       </stop>
       <stop offset="-1" stop-color="#b3b4b5">
-        <animate dur="2s" attributeName="offset" fill="freeze" from="-1" to="2" repeatCount="indefinite" />
+        <animate dur="4s" attributeName="offset" fill="freeze" from="-1" to="2" repeatCount="indefinite" />
       </stop>
       <stop offset="0" stop-color="#dfe0e1">
-        <animate dur="2s" attributeName="offset" fill="freeze" from="0" to="3" repeatCount="indefinite" />
+        <animate dur="4s" attributeName="offset" fill="freeze" from="0" to="3" repeatCount="indefinite" />
       </stop>
     </linearGradient>
   </defs>
