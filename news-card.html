@@ -35,9 +35,14 @@
         <button class="btn btn--black btn--sm" data-js-modal-open data-path="modal-consultation">Связаться с нами</button>
       </div>
 
-      <button class="burger-btn">
-        <span class="burger-icon"></span>
-      </button>
+      <div class="header__btns-mob">
+        <button class="header__btn header__btn-call" data-js-modal-open data-path="modal-consultation">
+          <img src="./images/icon/call.svg" alt="Связаться с нами" />
+        </button>
+        <button class="burger-btn">
+          <span class="burger-icon"></span>
+        </button>
+      </div>
     </div>
   </div>
 </header>
@@ -50,7 +55,6 @@
   </ul>
   <div class="burger-menu__btns">
     <button class="btn btn--white" data-js-modal-open data-path="modal-object">Предложить объект</button>
-    <button class="btn btn--black" data-js-modal-open data-path="modal-consultation">Связаться с нами</button>
   </div>
 </div>
 
@@ -72,6 +76,12 @@
                   <h1 class="h2 news-card__title">Новый бизнес-центр Art Residence открыт для&nbsp;аренды</h1>
                   <div class="news-card__header-box">
                     <time class="date" datetime="2025-09-25">25 сентября 2025</time>
+                    <div class="views">
+                      <svg class="icon icon--eye">
+                        <use xlink:href="./images/sprite.svg#eye"></use>
+                      </svg>
+                      <span>637</span>
+                    </div>
                     <div class="news-card__shared">
                       <button class="btn btn--text btn--sm news-card__shared-btn" data-js-news-share-btn>
                         <svg class="icon icon--share">
@@ -95,30 +105,102 @@
                   height="520"
                   alt="news-img"
                 />
-                <div class="news-card__descr-wrapper">
+                <div class="news-card__descr-container">
                   <div class="news-card__descr">
-                    <div>
+                    <div class="news-card__descr-wrapper">
                       <p>
-                        В городе появился современный бизнес-центр, который уже готов принять новых арендаторов. Здание отвечает
-                        всем требованиям современного коммерческого пространства: просторные офисы с панорамными окнами, удобная
-                        планировка, современные инженерные системы и охраняемая территория.
+                        В 2026 году в России будут действовать новые индексы изменения тарифов на жилищно-коммунальные услуги,
+                        которые напрямую влияют на эксплуатационные расходы объектов недвижимости.
                       </p>
+                      <p>Согласно утверждённым параметрам, индексация пройдет в два этапа:</p>
+                    </div>
+                    <div class="news-card__descr-wrapper">
+                      <span>1 этап. С 1 января 2026 года</span>
+                      <p>Базовое повышение тарифов составит 1,7% для всех регионов РФ.</p>
+                      <span>2 этап. С 1 октября 2026 года</span>
                       <p>
-                        Арендаторы смогут выбрать помещения разной площади — от компактных офисов для небольших команд до
-                        просторных open space формата. В здании предусмотрены конференц-залы, зоны для переговоров, кафе и
-                        подземный паркинг.
+                        Вступают в силу региональные индексы, отличающиеся в зависимости от темпов роста и состояния коммунальной
+                        инфраструктуры. Максимальные значения могут достигать 8–22% — в частности, в регионах с повышенной
+                        потребностью в модернизации сетей и коммунальных систем.
                       </p>
                     </div>
-                    <div>
-                      <span>Окружение проекта</span>
-                      <p>
-                        Особое внимание уделено инфраструктуре: бизнес-центр расположен в деловом районе, рядом с остановками
-                        общественного транспорта и выездом на основные магистрали города.
-                      </p>
-                      <p>
-                        Открытие центра — отличная возможность для компаний, которые ищут современное и комфортное пространство
-                        для работы и развития бизнеса.
-                      </p>
+                    <div class="news-card__descr-wrapper">
+                      <h2 class="news-card__descr-title">Пример таблицы индексации тарифов ЖКУ в 2026 году</h2>
+                      <div class="table-wrapper">
+                        <table class="table">
+                        <thead>
+                          <tr>
+                            <td>Услуга</td>
+                            <td>Тариф 2025 г.</td>
+                            <td>Тариф 2026 г.</td>
+                            <td>Изменение</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Электроснабжение</td>
+                            <td>6.50 ₽/кВт⋅ч</td>
+                            <td>6.80 ₽/кВт⋅ч</td>
+                            <td>+4.6%</td>
+                          </tr>
+                          <tr>
+                            <td>Водоснабжение</td>
+                            <td>45 ₽/м³</td>
+                            <td>47 ₽/м³</td>
+                            <td>+4.4%</td>
+                          </tr>
+                          <tr>
+                            <td>Водоотведение</td>
+                            <td>38 ₽/м³</td>
+                            <td>40 ₽/м³</td>
+                            <td>+5.2%</td>
+                          </tr>
+                          <tr>
+                            <td>Отопление</td>
+                            <td>2100 ₽/Гкал</td>
+                            <td>2200 ₽/Гкал</td>
+                            <td>+4.8%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      </div>
+                    </div>
+                    <div class="quote quote-1">
+                      <span>Важно</span>
+                      <p>Согласно утверждённым параметрам, индексация пройдет в два этапа</p>
+                    </div>
+                    <div class="news-card__descr-wrapper">
+                      <h2 class="news-card__descr-title">
+                        Что это означает для арендаторов и собственников коммерческих помещений?
+                      </h2>
+                      <div class="news-card__descr-box">
+                        <span class="dot">Рост эксплуатационных расходов</span>
+                        <p>
+                          Коммунальные платежи для объектов коммерческой недвижимости могут увеличиться, особенно во второй
+                          половине 2026 года.
+                        </p>
+                      </div>
+                      <div class="news-card__descr-box">
+                        <span class="dot">Региональные различия</span>
+                        <p>В некоторых субъектах РФ повышение будет минимальным, в других — более значительным.</p>
+                      </div>
+                      <div class="news-card__descr-box">
+                        <span class="dot">Фактор планирования бюджета</span>
+                        <p>
+                          Уже сегодня важно учитывать предстоящую индексацию при расчёте стоимости владения и аренды помещений.
+                        </p>
+                      </div>
+                      <div class="news-card__descr-box">
+                        <span class="dot">Обновление инфраструктуры</span>
+                        <p>
+                          Рост тарифов связан в том числе с программами модернизации инженерных сетей, что может повысить
+                          надежность услуг в долгосрочной перспективе.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="quote quote-2">
+                      <img src="./images/icon/qq.svg" alt="" />
+                      <p>Согласно утверждённым параметрам, индексация пройдет в два этапа</p>
                     </div>
                     <hr />
                     <p>Пocмoтpeть пpимepы сдаваемых oбъeктoв нa caйтe — <a href="https://fosure.ru">https://fosure.ru</a></p>
@@ -252,17 +334,18 @@
                 <div class="swiper-wrapper"><div class="swiper-slide">
   <a class="card-news" href="news-card.html">
     <div class="card__image-box">
-      <img
-        data-src="./images/card-news/1.jpg"
-        src="./images/1x1.png"
-        width="610"
-        height="300"
-        data-js-lazy
-        alt=""
-      />
+      <img data-src="./images/card-news/1.jpg" src="./images/1x1.png" width="610" height="300" data-js-lazy alt="" />
     </div>
     <div class="card__info">
-      <span class="cards__item-date">25 сентября 2025</span>
+      <div class="card__info-header">
+        <span class="cards__item-date">25 сентября 2025</span>
+        <div class="views">
+          <svg class="icon icon--eye">
+            <use xlink:href="./images/sprite.svg#eye"></use>
+          </svg>
+          <span>637</span>
+        </div>
+      </div>
       <div class="card__info-descr">
         <h3 class="cards__item-title">Новый бизнес-центр Art Residence открыт для аренды</h3>
         <p class="cards__item-descr">Современные офисные помещения с панорамными окнами и парковкой уже доступны для аренды. </p>
@@ -273,17 +356,18 @@
 <div class="swiper-slide">
   <a class="card-news" href="news-card.html">
     <div class="card__image-box">
-      <img
-        data-src="./images/card-news/2.jpg"
-        src="./images/1x1.png"
-        width="610"
-        height="300"
-        data-js-lazy
-        alt=""
-      />
+      <img data-src="./images/card-news/2.jpg" src="./images/1x1.png" width="610" height="300" data-js-lazy alt="" />
     </div>
     <div class="card__info">
-      <span class="cards__item-date">25 сентября 2025</span>
+      <div class="card__info-header">
+        <span class="cards__item-date">25 сентября 2025</span>
+        <div class="views">
+          <svg class="icon icon--eye">
+            <use xlink:href="./images/sprite.svg#eye"></use>
+          </svg>
+          <span>637</span>
+        </div>
+      </div>
       <div class="card__info-descr">
         <h3 class="cards__item-title">Снижение ставок на складские помещения</h3>
         <p class="cards__item-descr">До конца месяца действует специальное предложение на аренду складов. </p>
@@ -294,17 +378,18 @@
 <div class="swiper-slide">
   <a class="card-news" href="news-card.html">
     <div class="card__image-box">
-      <img
-        data-src="./images/card-news/3.jpg"
-        src="./images/1x1.png"
-        width="610"
-        height="300"
-        data-js-lazy
-        alt=""
-      />
+      <img data-src="./images/card-news/3.jpg" src="./images/1x1.png" width="610" height="300" data-js-lazy alt="" />
     </div>
     <div class="card__info">
-      <span class="cards__item-date">25 сентября 2025</span>
+      <div class="card__info-header">
+        <span class="cards__item-date">25 сентября 2025</span>
+        <div class="views">
+          <svg class="icon icon--eye">
+            <use xlink:href="./images/sprite.svg#eye"></use>
+          </svg>
+          <span>637</span>
+        </div>
+      </div>
       <div class="card__info-descr">
         <h3 class="cards__item-title">Популярные объекты в центре города</h3>
         <p class="cards__item-descr">Спрос на коммерческую недвижимость продолжает расти. Мы подготовили обзор самых востребованных офисов.</p>
@@ -315,17 +400,18 @@
 <div class="swiper-slide">
   <a class="card-news" href="news-card.html">
     <div class="card__image-box">
-      <img
-        data-src="./images/card-news/1.jpg"
-        src="./images/1x1.png"
-        width="610"
-        height="300"
-        data-js-lazy
-        alt=""
-      />
+      <img data-src="./images/card-news/1.jpg" src="./images/1x1.png" width="610" height="300" data-js-lazy alt="" />
     </div>
     <div class="card__info">
-      <span class="cards__item-date">25 сентября 2025</span>
+      <div class="card__info-header">
+        <span class="cards__item-date">25 сентября 2025</span>
+        <div class="views">
+          <svg class="icon icon--eye">
+            <use xlink:href="./images/sprite.svg#eye"></use>
+          </svg>
+          <span>637</span>
+        </div>
+      </div>
       <div class="card__info-descr">
         <h3 class="cards__item-title">Новый бизнес-центр Art Residence открыт для аренды</h3>
         <p class="cards__item-descr">Современные офисные помещения с панорамными окнами и парковкой уже доступны для аренды. </p>
@@ -336,17 +422,18 @@
 <div class="swiper-slide">
   <a class="card-news" href="news-card.html">
     <div class="card__image-box">
-      <img
-        data-src="./images/card-news/2.jpg"
-        src="./images/1x1.png"
-        width="610"
-        height="300"
-        data-js-lazy
-        alt=""
-      />
+      <img data-src="./images/card-news/2.jpg" src="./images/1x1.png" width="610" height="300" data-js-lazy alt="" />
     </div>
     <div class="card__info">
-      <span class="cards__item-date">25 сентября 2025</span>
+      <div class="card__info-header">
+        <span class="cards__item-date">25 сентября 2025</span>
+        <div class="views">
+          <svg class="icon icon--eye">
+            <use xlink:href="./images/sprite.svg#eye"></use>
+          </svg>
+          <span>637</span>
+        </div>
+      </div>
       <div class="card__info-descr">
         <h3 class="cards__item-title">Снижение ставок на складские помещения</h3>
         <p class="cards__item-descr">До конца месяца действует специальное предложение на аренду складов. </p>
@@ -357,17 +444,18 @@
 <div class="swiper-slide">
   <a class="card-news" href="news-card.html">
     <div class="card__image-box">
-      <img
-        data-src="./images/card-news/3.jpg"
-        src="./images/1x1.png"
-        width="610"
-        height="300"
-        data-js-lazy
-        alt=""
-      />
+      <img data-src="./images/card-news/3.jpg" src="./images/1x1.png" width="610" height="300" data-js-lazy alt="" />
     </div>
     <div class="card__info">
-      <span class="cards__item-date">25 сентября 2025</span>
+      <div class="card__info-header">
+        <span class="cards__item-date">25 сентября 2025</span>
+        <div class="views">
+          <svg class="icon icon--eye">
+            <use xlink:href="./images/sprite.svg#eye"></use>
+          </svg>
+          <span>637</span>
+        </div>
+      </div>
       <div class="card__info-descr">
         <h3 class="cards__item-title">Популярные объекты в центре города</h3>
         <p class="cards__item-descr">Спрос на коммерческую недвижимость продолжает расти. Мы подготовили обзор самых востребованных офисов.</p>
